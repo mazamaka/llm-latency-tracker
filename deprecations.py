@@ -16,7 +16,10 @@ from pathlib import Path
 
 from _log import logger
 
-DATA_PATH = Path(__file__).parent / "data" / "deprecations.json"
+import os as _os  # noqa: E402
+# Writable runtime path (set on servers to a data volume so the weekly fetcher's writes
+# live outside the git checkout and never conflict with the CD `git pull`).
+DATA_PATH = Path(_os.environ.get("DEPRECATIONS_PATH") or (Path(__file__).parent / "data" / "deprecations.json"))
 
 
 @dataclass
