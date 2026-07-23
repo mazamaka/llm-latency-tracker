@@ -1,0 +1,26 @@
+# CI: code quality on every push/PR. No secrets needed.
+# CD (auto-deploy) — pull-based on the server (cron: git pull + docker compose up),
+# no SSH key in GitHub → the production server isn't exposed to key leakage in Actions.
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch: {}
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install dev deps
+        run: pip install pytest ruff
+      - name: Ruff (lint)
+        run: ruff check .
+      - name: Tests
+        run: python3 -m pytest -q

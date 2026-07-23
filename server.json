@@ -1,0 +1,17 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
+  "name": "io.github.mazamaka/llm-latency-tracker",
+  "description": "Independent, provider-neutral latency & uptime for AI inference APIs, measured from multiple regions. Exposes a get_ai_api_latency tool over Streamable HTTP.",
+  "repository": {
+    "url": "https://github.com/mazamaka/llm-latency-tracker",
+    "source": "github"
+  },
+  "version": "1.0.0",
+  "websiteUrl": "https://llmlatency.dev",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://llmlatency.dev/mcp"
+    }
+  ]
+}

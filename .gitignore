@@ -1,0 +1,19 @@
+# secrets and data — NEVER commit these
+.env
+*.db
+*.db-wal
+*.db-shm
+measurements.db
+
+# site build
+site/
+
+# python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.venv/
+venv/
+*.egg-info/

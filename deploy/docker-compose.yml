@@ -1,0 +1,35 @@
+# One compose file per VPS. REGION is set for this server's location.
+# Deploy one instance per region (eu-west, us-east, ap-tokyo, ...).
+# Each region's data is synced to a shared central DB (see DEPLOY.md, step 4).
+services:
+  probe:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile
+    environment:
+      MODE: probe                          # probe + ship to the central node only (no build/prune)
+      REGION: ${REGION:?set REGION per server, e.g. us-east, ap-tokyo, sa-east}
+      INTERVAL: ${INTERVAL:-300}
+      DB_PATH: /data/measurements.db
+      # Where to ship measurements (central node behind a reverse proxy) + token:
+      INGEST_URL: ${INGEST_URL:?e.g. https://ingest.example.com/ingest}
+      INGEST_TOKEN: ${INGEST_TOKEN:?same token as the ingest endpoint}
+      # Keys for inference probes (optional) — pass from .env, do NOT commit:
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY:-}
+      GROQ_API_KEY: ${GROQ_API_KEY:-}
+      OPENROUTER_API_KEY: ${OPENROUTER_API_KEY:-}
+    volumes:
+      - probe-data:/data
+    restart: unless-stopped
+    # Hard limits — the probe physically can't disrupt the server's main workload:
+    cpus: 0.25          # at most a quarter core
+    mem_limit: 128m     # at most 128 MB RAM
+    pids_limit: 64
+    # NO ports: — the probe makes only outbound requests, no inbound ports
+    # (doesn't conflict with a reverse proxy / existing services on 80/443/etc.)
+    security_opt:
+      - no-new-privileges:true
+
+volumes:
+  probe-data:

@@ -1,0 +1,33 @@
+{
+  "_comment": "Model deprecation/migration calendar. All entries are verified from official provider deprecation pages (source_url). ISO dates. Update when sources change. Do NOT add unverified dates — this is public content.",
+  "_verified_at": "2026-07-23",
+  "_sources": {
+    "openai": "https://developers.openai.com/api/docs/deprecations",
+    "anthropic": "https://platform.claude.com/docs/en/docs/about-claude/model-deprecations",
+    "azure_openai": "https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/model-retirements",
+    "google": "https://ai.google.dev/gemini-api/docs/changelog",
+    "mistral": "https://docs.mistral.ai/getting-started/models/models_overview/"
+  },
+  "entries": [
+    {"provider": "anthropic", "model": "claude-opus-4-1-20250805", "announced": "2026-06-05", "shutdown": "2026-08-05", "replacement": "claude-opus-4-8", "source_url": "https://platform.claude.com/docs/en/docs/about-claude/model-deprecations", "verified": true},
+    {"provider": "openai", "model": "gpt-4o (2024-11-20)", "announced": null, "shutdown": "2026-10-01", "replacement": "gpt-5.1", "source_url": "https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/model-retirements", "verified": true, "note": "Azure OpenAI retirement date"},
+    {"provider": "openai", "model": "gpt-4-turbo", "announced": null, "shutdown": "2026-10-23", "replacement": "gpt-5.6-sol", "source_url": "https://developers.openai.com/api/docs/deprecations", "verified": true},
+    {"provider": "openai", "model": "gpt-4-0613", "announced": null, "shutdown": "2026-10-23", "replacement": "gpt-5.6-sol", "source_url": "https://developers.openai.com/api/docs/deprecations", "verified": true},
+    {"provider": "openai", "model": "gpt-3.5-turbo-0125", "announced": null, "shutdown": "2026-10-23", "replacement": "gpt-5.6-terra", "source_url": "https://developers.openai.com/api/docs/deprecations", "verified": true},
+    {"provider": "openai", "model": "o1-2024-12-17", "announced": null, "shutdown": "2026-10-23", "replacement": "gpt-5.6-sol", "source_url": "https://developers.openai.com/api/docs/deprecations", "verified": true},
+    {"provider": "openai", "model": "gpt-5-2025-08-07", "announced": null, "shutdown": "2026-12-11", "replacement": "gpt-5.6-sol", "source_url": "https://developers.openai.com/api/docs/deprecations", "verified": true},
+    {"provider": "openai", "model": "gpt-5-mini-2025-08-07", "announced": null, "shutdown": "2026-12-11", "replacement": "gpt-5.6-terra", "source_url": "https://developers.openai.com/api/docs/deprecations", "verified": true},
+    {"provider": "openai", "model": "o3-2025-04-16", "announced": null, "shutdown": "2026-12-11", "replacement": "gpt-5.6-sol", "source_url": "https://developers.openai.com/api/docs/deprecations", "verified": true},
+    {"provider": "openai", "model": "gpt-realtime", "announced": null, "shutdown": "2027-01-20", "replacement": "gpt-realtime-2.1", "source_url": "https://developers.openai.com/api/docs/deprecations", "verified": true},
+    {"provider": "openai", "model": "gpt-audio", "announced": null, "shutdown": "2027-01-20", "replacement": "gpt-audio-1.5", "source_url": "https://developers.openai.com/api/docs/deprecations", "verified": true},
+    {"provider": "openai", "model": "gpt-4o-realtime", "announced": null, "shutdown": "2027-01-20", "replacement": "gpt-realtime-2.1", "source_url": "https://developers.openai.com/api/docs/deprecations", "verified": true},
+    {"provider": "openai", "model": "gpt-4o-audio", "announced": null, "shutdown": "2027-01-20", "replacement": "gpt-audio-1.5", "source_url": "https://developers.openai.com/api/docs/deprecations", "verified": true},
+
+    {"provider": "anthropic", "model": "claude-opus-4-20250514", "announced": "2026-04-14", "shutdown": "2026-06-15", "replacement": "claude-opus-4-8", "source_url": "https://platform.claude.com/docs/en/docs/about-claude/model-deprecations", "verified": true, "note": "retired"},
+    {"provider": "anthropic", "model": "claude-sonnet-4-20250514", "announced": "2026-04-14", "shutdown": "2026-06-15", "replacement": "claude-sonnet-4-6", "source_url": "https://platform.claude.com/docs/en/docs/about-claude/model-deprecations", "verified": true, "note": "retired"},
+    {"provider": "anthropic", "model": "claude-3-7-sonnet-20250219", "announced": "2025-10-28", "shutdown": "2026-02-19", "replacement": "claude-sonnet-4-6", "source_url": "https://platform.claude.com/docs/en/docs/about-claude/model-deprecations", "verified": true, "note": "retired"},
+    {"provider": "anthropic", "model": "claude-3-haiku-20240307", "announced": "2026-02-19", "shutdown": "2026-04-20", "replacement": "claude-haiku-4-5-20251001", "source_url": "https://platform.claude.com/docs/en/docs/about-claude/model-deprecations", "verified": true, "note": "retired"},
+    {"provider": "openai", "model": "gpt-4o (2024-05-13, 2024-08-06)", "announced": null, "shutdown": "2026-03-31", "replacement": "gpt-5.1", "source_url": "https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/model-retirements", "verified": true, "note": "Azure OpenAI, retired"},
+    {"provider": "openai", "model": "dall-e-2 / dall-e-3", "announced": null, "shutdown": "2026-05-12", "replacement": "gpt-image-2", "source_url": "https://developers.openai.com/api/docs/deprecations", "verified": true, "note": "retired"}
+  ]
+}

@@ -1,0 +1,5 @@
+# The network probe and storage run on the stdlib — pip isn't needed for a demo.
+# These dependencies enable the inference probe (real TTFT) and nicer logs:
+httpx>=0.27          # streaming for the TTFT measurement
+loguru>=0.7          # logging (otherwise falls back to stdlib logging)
+python-dotenv>=1.0   # load .env (optional)
