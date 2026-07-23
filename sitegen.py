@@ -239,9 +239,14 @@ def _chart_svg(db_path: str, provider: str, regions: list[str]) -> str:
     lx, ly, row_h = pl, H + 10, 15
     for i, (reg, v) in enumerate(series.items()):
         c = _CHART_COLORS[i % len(_CHART_COLORS)]
+        lbl = _label(reg)
         pts = " ".join(f"{fx(t):.1f},{fy(p):.1f}" for t, p in v)
         lines += f'<polyline points="{pts}" fill="none" stroke="{c}" stroke-width="2"/>'
-        lbl = _label(reg)
+        # per-point markers with a native hover tooltip (no JS): "region: X ms - date time"
+        lines += "".join(
+            f'<circle cx="{fx(t):.1f}" cy="{fy(p):.1f}" r="3" fill="{c}"><title>'
+            f'{html.escape(lbl)}: {p:.0f} ms \u00b7 {html.escape(t[5:16].replace("T", " "))}</title></circle>'
+            for t, p in v)
         item_w = 21 + len(lbl) * 6.0 + 18                 # marker+gap + text + inter-item gap
         if lx > pl and lx + item_w > W - pr:              # doesn't fit -> wrap to next row
             lx, ly = pl, ly + row_h
