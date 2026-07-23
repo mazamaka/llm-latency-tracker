@@ -226,17 +226,30 @@ def _chart_svg(db_path: str, provider: str, regions: list[str]) -> str:
         y = pt + ih * (1 - frac)
         grid += (f'<line x1="{pl}" y1="{y:.0f}" x2="{W-pr}" y2="{y:.0f}" stroke="var(--line)" opacity="0.5"/>'
                  f'<text x="{pl-6}" y="{y+3:.0f}" text-anchor="end" font-size="10" fill="var(--sub)">{ymax*frac:.0f}</text>')
-    xl = "".join(f'<text x="{fx(t):.0f}" y="{H-8}" text-anchor="middle" font-size="10" fill="var(--sub)">'
-                 f'{html.escape(t[5:16].replace("T", " "))}</text>' for t in (xs[0], xs[len(xs)//2], xs[-1]))
+    # X labels: anchor the first at the left edge (start) and the last at the right edge (end)
+    # so neither gets clipped by the SVG viewport.
+    def _xlab(t: str, anchor: str) -> str:
+        return (f'<text x="{fx(t):.0f}" y="{H-8}" text-anchor="{anchor}" font-size="10" '
+                f'fill="var(--sub)">{html.escape(t[5:16].replace("T", " "))}</text>')
+    xl = _xlab(xs[0], "start") + _xlab(xs[len(xs) // 2], "middle") + _xlab(xs[-1], "end")
+
+    # Legend: lay out by actual label width with wrapping (a fixed step overlapped long
+    # labels such as "South America (Sao Paulo)").
     lines = legend = ""
+    lx, ly, row_h = pl, H + 10, 15
     for i, (reg, v) in enumerate(series.items()):
         c = _CHART_COLORS[i % len(_CHART_COLORS)]
         pts = " ".join(f"{fx(t):.1f},{fy(p):.1f}" for t, p in v)
         lines += f'<polyline points="{pts}" fill="none" stroke="{c}" stroke-width="2"/>'
-        lx = pl + i * 135
-        legend += (f'<line x1="{lx}" y1="{H+6}" x2="{lx+16}" y2="{H+6}" stroke="{c}" stroke-width="2.5"/>'
-                   f'<text x="{lx+21}" y="{H+10}" font-size="10" fill="var(--fg)">{html.escape(_label(reg))}</text>')
-    return (f'<svg viewBox="0 0 {W} {H+22}" width="100%" style="max-width:{W}px;height:auto" role="img" '
+        lbl = _label(reg)
+        item_w = 21 + len(lbl) * 6.0 + 18                 # marker+gap + text + inter-item gap
+        if lx > pl and lx + item_w > W - pr:              # doesn't fit -> wrap to next row
+            lx, ly = pl, ly + row_h
+        legend += (f'<line x1="{lx:.0f}" y1="{ly}" x2="{lx+16:.0f}" y2="{ly}" stroke="{c}" stroke-width="2.5"/>'
+                   f'<text x="{lx+21:.0f}" y="{ly+4}" font-size="10" fill="var(--fg)">{html.escape(lbl)}</text>')
+        lx += item_w
+    vb_h = ly + 10
+    return (f'<svg viewBox="0 0 {W} {vb_h:.0f}" width="100%" style="max-width:{W}px;height:auto" role="img" '
             f'aria-label="{html.escape(provider)} p50 latency over time by region">'
             f'<title>{html.escape(provider)} p50 latency over time (ms), by region</title>{grid}{xl}{lines}{legend}</svg>')
 
