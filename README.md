@@ -117,6 +117,8 @@ Measured latency across **45 AI inference providers** in 4 regions. Method: dist
 
 - Full dataset: [`data/rankings/2026-08-15.json`](data/rankings/2026-08-15.json) ([latest](data/rankings/latest.json))
 - Citable archive (DOI): [`10.5281/zenodo.21954788`](https://doi.org/10.5281/zenodo.21954788) — daily aggregates, CC-BY-4.0
+- Hugging Face dataset: <https://huggingface.co/datasets/llmlatency/llm-latency-tracker>
+- Python client: <https://pypi.org/project/llmlatency/>
 - Live rankings and methodology: <https://llmlatency.dev>
 - Machine-readable API: <https://llmlatency.dev/api/rankings.json>
 - Model deprecation calendar: <https://llmlatency.dev/deprecations>
