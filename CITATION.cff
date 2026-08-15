@@ -16,6 +16,11 @@ authors:
 repository-code: "https://github.com/mazamaka/llm-latency-tracker"
 url: "https://llmlatency.dev"
 license: CC-BY-4.0
+doi: "10.5281/zenodo.21954788"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.21954788"
+    description: "Archived dataset release on Zenodo"
 keywords:
   - llm
   - latency
