@@ -101,3 +101,25 @@ See **[CONTRIBUTING.md](CONTRIBUTING.md)** for dev setup, how to add a provider/
 
 - **Code:** [MIT](LICENSE)
 - **Data** (rankings, API output): **CC-BY-4.0** — attribute [llmlatency.dev](https://llmlatency.dev).
+
+<!-- DATASET:BEGIN -->
+
+### Daily snapshot — 2026-08-15
+
+Measured latency across **45 AI inference providers** in 4 regions. Method: distributed edge (DNS→TCP→TLS→TTFB) + inference (TTFT) probes, last 24h. License: CC-BY-4.0.
+
+| Region | Fastest provider (p50) | p50 | p95 | Uptime |
+|---|---|---|---|---|
+| Asia (Tokyo) | fireworks | 16 ms | 53 ms | 100% |
+| Europe (Germany) | nscale | 99 ms | 203 ms | 100% |
+| South America (São Paulo) | openrouter | 56 ms | 82 ms | 100% |
+| US (Central) | google | 44 ms | 132 ms | 100% |
+
+- Full dataset: [`data/rankings/2026-08-15.json`](data/rankings/2026-08-15.json) ([latest](data/rankings/latest.json))
+- Live rankings and methodology: <https://llmlatency.dev>
+- Machine-readable API: <https://llmlatency.dev/api/rankings.json>
+- Model deprecation calendar: <https://llmlatency.dev/deprecations>
+
+_Snapshot generated 2026-08-15T15:44:33Z — this table is regenerated daily._
+
+<!-- DATASET:END -->
