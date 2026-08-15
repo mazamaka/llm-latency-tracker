@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite it as below."
+title: "LLM Latency Tracker: measured latency and uptime for AI inference APIs"
+abstract: >-
+  Independent, continuously measured latency (DNS to TCP to TLS to TTFB) and
+  inference time-to-first-token for ~45 AI inference API providers across four
+  regions. Probes run every five minutes from separate network locations and are
+  never routed through a gateway, so the numbers describe the providers rather
+  than a proxy in front of them. Daily snapshots are published in this repository;
+  the live dataset, the full methodology and the raw-data retention policy are at
+  https://llmlatency.dev.
+type: dataset
+authors:
+  - name: "llmlatency.dev"
+    website: "https://llmlatency.dev"
+repository-code: "https://github.com/mazamaka/llm-latency-tracker"
+url: "https://llmlatency.dev"
+license: CC-BY-4.0
+keywords:
+  - llm
+  - latency
+  - benchmark
+  - ai-inference
+  - observability
+  - time-to-first-token

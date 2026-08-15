@@ -1,0 +1,37 @@
+{
+ "upload_type": "dataset",
+ "title": "LLM Latency Tracker: measured latency and uptime for AI inference APIs",
+ "description": "<p>Independent, continuously measured latency (DNS &rarr; TCP &rarr; TLS &rarr; TTFB) and inference time-to-first-token for ~45 AI inference API providers across four regions (US Central, Europe, Asia/Tokyo, South America).</p><p>Probes run every five minutes from separate network locations and are never routed through a gateway, so the numbers describe the providers themselves rather than a proxy in front of them. This repository carries daily JSON snapshots under <code>data/rankings/</code>; the live dataset, the full methodology and the raw-data retention policy are published at <a href=\"https://llmlatency.dev\">llmlatency.dev</a>.</p>",
+ "creators": [
+  {
+   "name": "llmlatency.dev"
+  }
+ ],
+ "license": "cc-by-4.0",
+ "access_right": "open",
+ "keywords": [
+  "llm",
+  "latency",
+  "benchmark",
+  "ai-inference",
+  "observability",
+  "time-to-first-token"
+ ],
+ "related_identifiers": [
+  {
+   "identifier": "https://llmlatency.dev",
+   "relation": "isSupplementTo",
+   "scheme": "url"
+  },
+  {
+   "identifier": "https://llmlatency.dev/methodology",
+   "relation": "isDocumentedBy",
+   "scheme": "url"
+  },
+  {
+   "identifier": "https://llmlatency.dev/api/rankings.json",
+   "relation": "isDerivedFrom",
+   "scheme": "url"
+  }
+ ]
+}
