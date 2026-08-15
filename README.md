@@ -110,10 +110,10 @@ Measured latency across **45 AI inference providers** in 4 regions. Method: dist
 
 | Region | Fastest provider (p50) | p50 | p95 | Uptime |
 |---|---|---|---|---|
-| Asia (Tokyo) | fireworks | 17 ms | 53 ms | 100% |
-| Europe (Germany) | nscale | 99 ms | 203 ms | 100% |
+| Asia (Tokyo) | fireworks | 17 ms | 52 ms | 100% |
+| Europe (Germany) | nscale | 99 ms | 202 ms | 100% |
 | South America (São Paulo) | openrouter | 56 ms | 85 ms | 100% |
-| US (Central) | google | 44 ms | 128 ms | 100% |
+| US (Central) | google | 43 ms | 124 ms | 100% |
 
 - Full dataset: [`data/rankings/2026-08-15.json`](data/rankings/2026-08-15.json) ([latest](data/rankings/latest.json))
 - Citable archive (DOI): [`10.5281/zenodo.21954788`](https://doi.org/10.5281/zenodo.21954788) — daily aggregates, CC-BY-4.0
@@ -123,6 +123,6 @@ Measured latency across **45 AI inference providers** in 4 regions. Method: dist
 - Machine-readable API: <https://llmlatency.dev/api/rankings.json>
 - Model deprecation calendar: <https://llmlatency.dev/deprecations>
 
-_Snapshot generated 2026-08-15T20:32:46Z — this table is regenerated daily._
+_Snapshot generated 2026-08-15T22:16:36Z — this table is regenerated daily._
 
 <!-- DATASET:END -->
