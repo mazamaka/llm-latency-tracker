@@ -112,18 +112,19 @@ Measured latency across **45 AI inference providers** in 4 regions. Method: dist
 |---|---|---|---|---|
 | Asia (Tokyo) | fireworks | 15 ms | 51 ms | 100% |
 | Europe (Germany) | nscale | 99 ms | 201 ms | 100% |
-| South America (São Paulo) | openrouter | 56 ms | 83 ms | 100% |
-| US (Central) | fireworks | 45 ms | 100 ms | 100% |
+| South America (São Paulo) | openrouter | 57 ms | 80 ms | 100% |
+| US (Central) | fireworks | 45 ms | 99 ms | 100% |
 
 - Full dataset: [`data/rankings/2026-08-16.json`](data/rankings/2026-08-16.json) ([latest](data/rankings/latest.json))
 - Citable archive (DOI): [`10.5281/zenodo.21954788`](https://doi.org/10.5281/zenodo.21954788) — daily aggregates, CC-BY-4.0
 - Hugging Face dataset: <https://huggingface.co/datasets/llmlatency/llm-latency-tracker>
+- Kaggle dataset: <https://www.kaggle.com/datasets/llmlatency/llm-latency-tracker>
 - Archived in Software Heritage: [`swh:1:snp:2778cbabd72a70a629ee35fbd5ac536d1ccb7a9a`](https://archive.softwareheritage.org/swh:1:snp:2778cbabd72a70a629ee35fbd5ac536d1ccb7a9a)
 - Python client: <https://pypi.org/project/llmlatency/>
 - Live rankings and methodology: <https://llmlatency.dev>
 - Machine-readable API: <https://llmlatency.dev/api/rankings.json>
 - Model deprecation calendar: <https://llmlatency.dev/deprecations>
 
-_Snapshot generated 2026-08-16T06:16:50Z — this table is regenerated daily._
+_Snapshot generated 2026-08-16T07:17:09Z — this table is regenerated daily._
 
 <!-- DATASET:END -->
