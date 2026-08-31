@@ -40,6 +40,16 @@ curl -X POST https://llmlatency.dev/mcp \
        "params":{"name":"get_ai_api_latency","arguments":{"region":"eu-hetzner"}}}'
 ```
 
+### Run the MCP server locally
+
+The hosted endpoint above needs no setup. If you prefer a local stdio server (or want to build it from source), `mcp_server.py` is a dependency-free proxy over the same public JSON API:
+
+```bash
+python3 mcp_server.py            # stdio MCP, stdlib only
+# or
+docker build -t llm-latency-mcp . && docker run -i llm-latency-mcp
+```
+
 Also available: an [MCP Server Card](https://llmlatency.dev/.well-known/mcp/server-card.json) (`/.well-known/mcp/server-card.json`), a browser **WebMCP** tool, an [API catalog](https://llmlatency.dev/.well-known/api-catalog) (RFC 9727) and an [Agent Skills index](https://llmlatency.dev/.well-known/agent-skills/index.json). Regions: `eu-hetzner`, `us-central`, `ap-tokyo`, `sa-east` (omit for all).
 
 ## How it works
