@@ -114,18 +114,18 @@ See **[CONTRIBUTING.md](CONTRIBUTING.md)** for dev setup, how to add a provider/
 
 <!-- DATASET:BEGIN -->
 
-### Daily snapshot — 2026-09-08
+### Daily snapshot — 2026-09-09
 
 Measured latency across **45 AI inference providers** in 4 regions. Method: distributed edge (DNS→TCP→TLS→TTFB) + inference (TTFT) probes, last 24h. License: CC-BY-4.0.
 
 | Region | Fastest provider (p50) | p50 | p95 | Uptime |
 |---|---|---|---|---|
-| Asia (Tokyo) | fireworks | 22 ms | 59 ms | 100% |
-| Europe (Germany) | fireworks | 98 ms | 201 ms | 100% |
-| South America (São Paulo) | openrouter | 58 ms | 93 ms | 100% |
-| US (Central) | siliconflow | 30 ms | 92 ms | 94% |
+| Asia (Tokyo) | fireworks | 18 ms | 57 ms | 100% |
+| Europe (Germany) | fireworks | 97 ms | 200 ms | 100% |
+| South America (São Paulo) | openrouter | 59 ms | 98 ms | 100% |
+| US (Central) | google | 44 ms | 100 ms | 100% |
 
-- Full dataset: [`data/rankings/2026-09-08.json`](data/rankings/2026-09-08.json) ([latest](data/rankings/latest.json))
+- Full dataset: [`data/rankings/2026-09-09.json`](data/rankings/2026-09-09.json) ([latest](data/rankings/latest.json))
 - Citable archive (DOI): [`10.5281/zenodo.21954788`](https://doi.org/10.5281/zenodo.21954788) — daily aggregates, CC-BY-4.0
 - Hugging Face dataset: <https://huggingface.co/datasets/llmlatency/llm-latency-tracker>
 - Kaggle dataset: <https://www.kaggle.com/datasets/llmlatency/llm-latency-tracker>
@@ -135,6 +135,6 @@ Measured latency across **45 AI inference providers** in 4 regions. Method: dist
 - Machine-readable API: <https://llmlatency.dev/api/rankings.json>
 - Model deprecation calendar: <https://llmlatency.dev/deprecations>
 
-_Snapshot generated 2026-09-08T07:48:38Z — this table is regenerated daily._
+_Snapshot generated 2026-09-09T07:48:24Z — this table is regenerated daily._
 
 <!-- DATASET:END -->
