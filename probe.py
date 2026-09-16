@@ -12,7 +12,7 @@ import time
 from datetime import datetime, timezone
 
 from _log import logger
-from config import Provider, PROBE_TIMEOUT, REGION
+from config import PROBE_TIMEOUT, REGION, Provider
 from db import Measurement
 
 
@@ -80,7 +80,7 @@ def measure_network(provider: Provider, region: str = REGION, timeout: float = P
             tls_ms=round(tls_ms, 2), ttfb_ms=round(ttfb_ms, 2), total_ms=round(total_ms, 2),
             http_status=http_status,
         )
-    except (socket.timeout, TimeoutError, cf.TimeoutError):
+    except (TimeoutError, cf.TimeoutError):
         logger.warning("network {} from {}: timeout", provider.name, region)
         return Measurement(ts=_now_iso(), provider=provider.name, region=region,
                            probe_type="network", status="timeout", error="timeout")

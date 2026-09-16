@@ -69,7 +69,7 @@ def handle(msg: dict) -> dict | None:
         region = (params.get("arguments") or {}).get("region")
         try:
             out = fetch_rankings(region)
-        except Exception as e:  # network errors become tool errors, not crashes
+        except Exception as e:  # noqa: BLE001 - protocol boundary returns tool errors
             return {"jsonrpc": "2.0", "id": mid, "result": {
                 "content": [{"type": "text", "text": f"upstream error: {e}"}], "isError": True}}
         return {"jsonrpc": "2.0", "id": mid, "result": {

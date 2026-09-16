@@ -19,10 +19,11 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from _log import logger
+from aggregate import Ranking, latency_series, ttfb_ranking
 from config import DB_PATH
 from db import connect
-from aggregate import ttfb_ranking, Ranking, latency_series
-from deprecations import load as load_deprecations, upcoming, recent
+from deprecations import load as load_deprecations
+from deprecations import recent, upcoming
 
 BASE_URL = os.environ.get("BASE_URL", "https://llmlatency.dev").rstrip("/")
 SITE_NAME = "AI Latency Tracker"
@@ -183,8 +184,8 @@ def region_page(db_path: str, region: str) -> str:
          f"By edge latency (TTFB), {net[0].provider if net else 'n/a'} is fastest at "
          f"{net[0].p50_ms:.0f} ms p50 as of {date}." if net else "Data collecting."),
         ("How is this measured?",
-         "Distributed probes measure DNS, TCP, TLS and first-byte time to each provider's API host "
-         "from this region on a schedule; inference latency measures time-to-first-token with a minimal request."),
+         ("Distributed probes measure DNS, TCP, TLS and first-byte time to each provider's API host "
+          "from this region on a schedule; inference latency measures time-to-first-token with a minimal request.")),
     ]
     body = f"""
 <h1>Fastest AI API from {html.escape(label)}</h1>
@@ -403,8 +404,8 @@ def region_md(db_path: str, region: str) -> str:
     net = ttfb_ranking(db_path, region, 24, "network")
     label, date = _label(region), _now().strftime("%B %d, %Y")
     out = [f"# Fastest AI API from {label}",
-           f"Updated {date}. Independent, provider-neutral edge latency (TTFB) and uptime by provider, "
-           f"measured from {label}, updated automatically.", ""]
+           (f"Updated {date}. Independent, provider-neutral edge latency (TTFB) and uptime by provider, "
+            f"measured from {label}, updated automatically."), ""]
     if net:
         t = net[0]
         out.append(f"As of {date}, measured from {label}, the fastest AI inference API by edge latency "

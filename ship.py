@@ -17,7 +17,7 @@ from pathlib import Path
 
 from _log import logger
 from config import DB_PATH
-from db import connect, Measurement
+from db import Measurement, connect
 
 INGEST_URL = os.environ.get("INGEST_URL", "")       # e.g. https://ingest.example.com/ingest
 INGEST_TOKEN = os.environ.get("INGEST_TOKEN", "")

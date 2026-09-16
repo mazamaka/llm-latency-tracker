@@ -8,9 +8,9 @@ import tempfile
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from aggregate import _percentile, ttfb_ranking
+from db import InvalidIdentifier, Measurement, connect, init_db, insert
+from deprecations import Deprecation, load, upcoming
 from probe import _parse_status
-from db import init_db, insert, connect, Measurement, InvalidIdentifier
-from deprecations import load, upcoming, Deprecation
 
 
 def test_percentile_basic():
@@ -68,7 +68,7 @@ def test_sitegen_builds():
     with tempfile.TemporaryDirectory() as d:
         db = os.path.join(d, "t.db")
         init_db(db)
-        insert(db, Measurement(ts="2026-07-23T10:00:00+00:00", provider="google", region="local",
+        insert(db, Measurement(ts=sitegen._now().isoformat(), provider="google", region="local",
                                probe_type="network", status="ok", ttfb_ms=55))
         out = os.path.join(d, "site")
         n = sitegen.build(db, out)
@@ -77,7 +77,8 @@ def test_sitegen_builds():
         assert os.path.exists(os.path.join(out, "llms.txt"))
         assert os.path.exists(os.path.join(out, "deprecations.html"))
         assert os.path.exists(os.path.join(out, "region", "local.html"))
-        html = open(os.path.join(out, "region", "local.html")).read()
+        with open(os.path.join(out, "region", "local.html")) as page:
+            html = page.read()
         assert "fastest AI inference API" in html
         assert "application/ld+json" in html      # schema.org present
 
@@ -126,8 +127,9 @@ def test_percentile_deterministic():
 def _start_ingest(central_db, token):
     """Start an ingest server on a free localhost port in the background. Return (httpd, url)."""
     import socket as _s
-    from http.server import ThreadingHTTPServer
     import threading
+    from http.server import ThreadingHTTPServer
+
     import ingest as ing
     ing.INGEST_TOKEN = token
     ing._Handler.db_path = central_db
@@ -144,7 +146,7 @@ def _start_ingest(central_db, token):
 
 def test_ingest_ship_end_to_end():
     """probe writes locally → ship_pending sends to ingest → center receives; watermark advances."""
-    from ship import ship_pending, _read_watermark
+    from ship import _read_watermark, ship_pending
     with tempfile.TemporaryDirectory() as d:
         local, central = os.path.join(d, "p.db"), os.path.join(d, "c.db")
         token = "test-secret-token-123"

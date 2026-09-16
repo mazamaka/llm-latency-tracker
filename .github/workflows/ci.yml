@@ -19,7 +19,7 @@ jobs:
         with:
           python-version: "3.12"
       - name: Install dev deps
-        run: pip install pytest ruff
+        run: pip install "pytest==9.1.1" "ruff==0.16.0"
       - name: Ruff (lint)
         run: ruff check .
       - name: Tests

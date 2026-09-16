@@ -16,7 +16,7 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 
 from _log import logger
 from config import DB_PATH
-from db import init_db, insert, Measurement, InvalidIdentifier
+from db import InvalidIdentifier, Measurement, init_db, insert
 
 INGEST_TOKEN = os.environ.get("INGEST_TOKEN", "")
 INGEST_PORT = int(os.environ.get("INGEST_PORT", "8787"))
@@ -55,13 +55,13 @@ class _Handler(BaseHTTPRequestHandler):
             return False
         return hmac.compare_digest(auth[len(prefix):], INGEST_TOKEN)  # constant-time
 
-    def do_GET(self) -> None:  # noqa: N802
+    def do_GET(self) -> None:
         if self.path == "/health":
             self._json(200, {"ok": True})
         else:
             self._json(404, {"error": "not found"})
 
-    def do_POST(self) -> None:  # noqa: N802
+    def do_POST(self) -> None:
         if self.path != "/ingest":
             return self._json(404, {"error": "not found"})
         if not self._authorized():
@@ -77,7 +77,7 @@ class _Handler(BaseHTTPRequestHandler):
             payload = json.loads(self.rfile.read(length))
             rows = payload["measurements"]
             if not isinstance(rows, list):
-                raise ValueError("measurements must be a list")
+                raise TypeError("measurements must be a list")
             if len(rows) > MAX_BATCH:
                 return self._json(413, {"error": f"batch > {MAX_BATCH}"})
         except (json.JSONDecodeError, KeyError, ValueError, TypeError) as e:

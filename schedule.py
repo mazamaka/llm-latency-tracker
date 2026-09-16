@@ -10,10 +10,10 @@ import os
 import time
 
 from _log import logger
-from run import run_once
-from sitegen import build
 from prune import prune
-from ship import ship_pending, prune_shipped
+from run import run_once
+from ship import prune_shipped, ship_pending
+from sitegen import build
 
 INTERVAL = int(os.environ.get("INTERVAL", "300"))          # seconds between cycles
 REBUILD_EVERY = int(os.environ.get("REBUILD_EVERY", "1"))  # rebuild the site once every N cycles

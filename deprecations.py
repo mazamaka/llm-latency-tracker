@@ -10,13 +10,13 @@ official deprecation pages (see data/deprecations.json → _sources). The agent 
 from __future__ import annotations
 
 import json
+import os as _os
 from dataclasses import dataclass
 from datetime import date
 from pathlib import Path
 
 from _log import logger
 
-import os as _os  # noqa: E402
 # Writable runtime path (set on servers to a data volume so the weekly fetcher's writes
 # live outside the git checkout and never conflict with the CD `git pull`).
 DATA_PATH = Path(_os.environ.get("DEPRECATIONS_PATH") or (Path(__file__).parent / "data" / "deprecations.json"))
@@ -38,7 +38,7 @@ class Deprecation:
         if not self.shutdown:
             return False
         try:
-            return date.fromisoformat(self.shutdown) < date.today()
+            return date.fromisoformat(self.shutdown) < date.today()  # noqa: DTZ011 - calendar dates use local time
         except ValueError:
             return False
 

@@ -17,7 +17,7 @@ except ImportError:  # pragma: no cover - fallback for environments without pip
     class _LoguruStyleAdapter:
         """Converts loguru-style ('{}', *args) into a ready string for stdlib logging."""
 
-        def __init__(self, base: "logging.Logger") -> None:
+        def __init__(self, base: logging.Logger) -> None:
             self._base = base
 
         @staticmethod

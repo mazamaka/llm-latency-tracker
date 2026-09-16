@@ -9,9 +9,9 @@ import argparse
 import concurrent.futures as cf
 
 from _log import logger
-from config import REGION, DB_PATH, providers_by_name
-from db import init_db, insert, Measurement
-from probe import measure_network, measure_inference
+from config import DB_PATH, REGION, providers_by_name
+from db import Measurement, init_db, insert
+from probe import measure_inference, measure_network
 
 
 def run_once(only: list[str] | None = None, db_path: str = DB_PATH) -> list[Measurement]:

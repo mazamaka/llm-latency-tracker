@@ -32,7 +32,7 @@ _UA = "Mozilla/5.0 (compatible; llmlatency-deprecations/1.0; +https://llmlatency
 _GEMINI_KEY = os.environ.get("GEMINI_API_KEY", "")
 _GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "gemini-flash-lite-latest")
 _GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/models/{}:generateContent"
-_DEP_KW = re.compile(r"deprecat|retire|shut ?down|sunset|legacy|end.of.life|discontinu|removal", re.I)
+_DEP_KW = re.compile(r"deprecat|retire|shut ?down|sunset|legacy|end.of.life|discontinu|removal", re.IGNORECASE)
 
 # Official deprecation pages (server-rendered tables verified 2026-07-23).
 SOURCES: list[tuple[str, str]] = [
@@ -157,7 +157,7 @@ def _parse_table(rows: list[list[str]]) -> list[dict]:
 
 def _fetch(url: str) -> str:
     req = urllib.request.Request(url, headers={"User-Agent": _UA})
-    with urllib.request.urlopen(req, timeout=25) as resp:      # noqa: S310 - fixed provider allowlist
+    with urllib.request.urlopen(req, timeout=25) as resp:
         return resp.read().decode("utf-8", "replace")
 
 
@@ -188,7 +188,7 @@ def _gemini(prompt: str) -> str:
     req = urllib.request.Request(
         _GEMINI_URL.format(_GEMINI_MODEL), data=body, method="POST",
         headers={"x-goog-api-key": _GEMINI_KEY, "Content-Type": "application/json"})
-    with urllib.request.urlopen(req, timeout=90) as resp:      # noqa: S310
+    with urllib.request.urlopen(req, timeout=90) as resp:
         d = json.load(resp)
     return d["candidates"][0]["content"]["parts"][0]["text"]
 
@@ -208,7 +208,7 @@ def _llm_rows(provider: str, tables_text: str) -> list[dict]:
     try:
         data = json.loads(raw)
     except json.JSONDecodeError:
-        m = re.search(r"\[.*\]", raw, re.S)
+        m = re.search(r"\[.*\]", raw, re.DOTALL)
         data = json.loads(m.group(0)) if m else []
     out: list[dict] = []
     for e in data if isinstance(data, list) else []:
