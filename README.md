@@ -114,19 +114,19 @@ See **[CONTRIBUTING.md](CONTRIBUTING.md)** for dev setup, how to add a provider/
 
 <!-- DATASET:BEGIN -->
 
-### Daily snapshot — 2026-09-15
+### Daily snapshot — 2026-09-16
 
 Measured latency across **45 AI inference providers** in 4 regions. Method: distributed edge (DNS→TCP→TLS→TTFB) + inference (TTFT) probes, last 24h. License: CC-BY-4.0.
 
 | Region | Fastest provider (p50) | p50 | p95 | Uptime |
 |---|---|---|---|---|
-| Asia (Tokyo) | fireworks | 18 ms | 64 ms | 100% |
-| Europe (Germany) | fireworks | 98 ms | 198 ms | 100% |
-| South America (São Paulo) | openrouter | 58 ms | 91 ms | 100% |
-| US (Central) | fireworks | 28 ms | 86 ms | 100% |
+| Asia (Tokyo) | fireworks | 19 ms | 57 ms | 100% |
+| Europe (Germany) | fireworks | 97 ms | 202 ms | 100% |
+| South America (São Paulo) | openrouter | 60 ms | 96 ms | 100% |
+| US (Central) | fireworks | 27 ms | 74 ms | 100% |
 
-- Full dataset: [`data/rankings/2026-09-15.json`](data/rankings/2026-09-15.json) ([latest](data/rankings/latest.json))
-- Citable archive (DOI): [`10.5281/zenodo.21954788`](https://doi.org/10.5281/zenodo.21954788) — daily aggregates, CC-BY-4.0
+- Full dataset: [`data/rankings/2026-09-16.json`](data/rankings/2026-09-16.json) ([latest](data/rankings/latest.json))
+- Citable archive (DOI): [`10.5281/zenodo.22764636`](https://doi.org/10.5281/zenodo.22764636) — daily aggregates, CC-BY-4.0
 - Hugging Face dataset: <https://huggingface.co/datasets/llmlatency/llm-latency-tracker>
 - Kaggle dataset: <https://www.kaggle.com/datasets/llmlatency/llm-latency-tracker>
 - Archived in Software Heritage: [`swh:1:snp:2778cbabd72a70a629ee35fbd5ac536d1ccb7a9a`](https://archive.softwareheritage.org/swh:1:snp:2778cbabd72a70a629ee35fbd5ac536d1ccb7a9a)
@@ -135,6 +135,6 @@ Measured latency across **45 AI inference providers** in 4 regions. Method: dist
 - Machine-readable API: <https://llmlatency.dev/api/rankings.json>
 - Model deprecation calendar: <https://llmlatency.dev/deprecations>
 
-_Snapshot generated 2026-09-15T07:49:07Z — this table is regenerated daily._
+_Snapshot generated 2026-09-16T07:49:10Z — this table is regenerated daily._
 
 <!-- DATASET:END -->
