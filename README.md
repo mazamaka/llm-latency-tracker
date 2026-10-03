@@ -1,116 +1,63 @@
-# LLM Latency Tracker
+# 📊 LLM Latency Tracker
 
-**Independent, provider-neutral latency & uptime for AI inference APIs — measured, not scraped.**
+**Measure AI API latency and uptime across regions, and publish the results as open data.**
 
-🌐 **Live: [llmlatency.dev](https://llmlatency.dev)** · 📊 [JSON API](https://llmlatency.dev/api/rankings.json) · 🤖 [MCP server](https://llmlatency.dev/mcp) · 🗓️ [Deprecation calendar](https://llmlatency.dev/deprecations)
+🌐 **[Live rankings](https://llmlatency.dev)** · **[JSON API](https://llmlatency.dev/api/rankings.json)** · **[MCP endpoint](https://llmlatency.dev/mcp)**
 
-![License](https://img.shields.io/badge/code-MIT-blue) ![Data](https://img.shields.io/badge/data-CC--BY--4.0-green) ![Agent-Ready](https://img.shields.io/badge/agent--ready-Level%205-orange) ![Python](https://img.shields.io/badge/python-3.12%2B-3776ab)
+## ⚡ What it does
 
-Most "AI API latency" numbers come from the providers themselves, or from a benchmark run once and never updated. This project **measures** it continuously, from multiple regions, and publishes the result as an open dataset.
+- 🌍 **Regional measurements** — compare provider response times and availability from distributed probe nodes.
+- ⏱️ **Two probe types** — network time to first byte (TTFB) and optional inference time to first token (TTFT).
+- 📈 **Open dataset** — daily rankings, historical snapshots and regional p50 / p95 statistics.
+- 🤖 **Agent access** — JSON API, MCP, Markdown pages and an `llms.txt` index.
+- 🗓️ **Model lifecycle** — a deprecation calendar with links to provider announcements.
 
-- **Edge latency** — full DNS → TCP → TLS → time-to-first-byte, measured with the Python standard library (no API key required).
-- **Inference latency** — real time-to-first-token via a streaming request (optional, needs a provider key).
-- **Uptime** — success rate per provider, per region.
-- **Regions** — Europe (Germany), US (Central), Asia (Tokyo), South America (São Paulo). More welcome.
-- **~45 providers** — OpenAI, Anthropic, Google, Mistral, DeepSeek, xAI, Groq, Together, Fireworks, Cerebras, OpenRouter, Perplexity, plus Chinese models (GLM/Zhipu, Kimi/Moonshot, Qwen, MiniMax) and many more.
-- **Deprecation calendar** — upcoming model retirements + migration targets, verified from official provider docs.
+## 🔧 Built for measurement
 
-The site is a self-updating static site (Cloudflare Pages). The value isn't the code — it's the continuously-accumulated, distributed measurement archive. The code is open so the methodology is transparent.
+- **Python standard-library core** for edge probes; provider keys are needed for inference probes.
+- **SQLite storage** and regional aggregation, with remote nodes shipping measurements to a central node.
+- **Static publishing** for the website and JSON datasets.
+- **CI checks** for tests and linting; published snapshots include their measurement date.
 
-## For developers
+**Reading the results:** edge TTFB measures network/API responsiveness, not model generation speed. Compare it separately from inference TTFT; results depend on region, probe type and time window.
+
+## 🚀 Quick start
+
+Use the public data without installing anything:
 
 ```bash
-# All regions, provider rankings for the last 24h — measured latency + uptime:
 curl https://llmlatency.dev/api/rankings.json
 ```
 
-- **JSON API:** [`/api/rankings.json`](https://llmlatency.dev/api/rankings.json) · **OpenAPI:** [`/openapi.json`](https://llmlatency.dev/openapi.json)
-- **Any page as Markdown:** send `Accept: text/markdown` to any page URL, or append `.md`.
-- **For LLM ingestion:** [`/llms.txt`](https://llmlatency.dev/llms.txt) (index) and [`/llms-full.txt`](https://llmlatency.dev/llms-full.txt) (full corpus).
-- **License:** data is **CC-BY-4.0** — free to use with attribution.
-
-## For AI agents
-
-There's a real **MCP server** (Streamable HTTP) exposing a `get_ai_api_latency` tool backed by the live data:
+Or run edge probes locally with **Python 3.12+**:
 
 ```bash
-curl -X POST https://llmlatency.dev/mcp \
-  -H 'Content-Type: application/json' \
-  -d '{"jsonrpc":"2.0","id":1,"method":"tools/call",
-       "params":{"name":"get_ai_api_latency","arguments":{"region":"eu-hetzner"}}}'
-```
-
-### Run the MCP server locally
-
-The hosted endpoint above needs no setup. If you prefer a local stdio server (or want to build it from source), `mcp_server.py` is a dependency-free proxy over the same public JSON API:
-
-```bash
-python3 mcp_server.py            # stdio MCP, stdlib only
-# or
-docker build -t llm-latency-mcp . && docker run -i llm-latency-mcp
-```
-
-Also available: an [MCP Server Card](https://llmlatency.dev/.well-known/mcp/server-card.json) (`/.well-known/mcp/server-card.json`), a browser **WebMCP** tool, an [API catalog](https://llmlatency.dev/.well-known/api-catalog) (RFC 9727) and an [Agent Skills index](https://llmlatency.dev/.well-known/agent-skills/index.json). Regions: `eu-hetzner`, `us-central`, `ap-tokyo`, `sa-east` (omit for all).
-
-## How it works
-
-```
-config.py       — registry of providers + this node's REGION (env)
-probe.py        — network probe (DNS→TCP→TLS→TTFB, stdlib, no key) + inference probe (TTFT, needs key)
-run.py          — one probe cycle across all providers (run on a schedule)
-db.py           — SQLite time-series (the accumulated measurement archive)
-aggregate.py    — measurements → p50 / p95 / uptime rankings per region & provider
-sitegen.py      — rankings → static site (JSON API, OpenAPI, llms.txt, schema.org, MCP surface)
-ingest.py       — central endpoint that collects measurements from remote probe nodes
-ship.py         — probe node → central node shipper (watermark-based, never loses data on outage)
-deprecations.py — model deprecation/migration calendar (only verified, sourced entries)
-```
-
-Each probe node runs with its own `REGION`, measures every provider, and writes to the time-series. For multi-region, remote nodes ship their measurements to a central node that aggregates and builds the site.
-
-## Run it yourself (no keys needed)
-
-```bash
-git clone https://github.com/mazamaka/llm-latency-tracker
+git clone https://github.com/mazamaka/llm-latency-tracker.git
 cd llm-latency-tracker
-REGION=local python3 run.py         # take edge-latency measurements
-python3 aggregate.py --region local # see the ranking from this location
-```
-
-Runs on plain Python 3.12+ (standard library). `httpx` / `loguru` are optional.
-
-**Inference probes (real TTFT):**
-
-```bash
-cp .env.example .env                # add keys for the providers you want to measure
-pip install -r requirements.txt
 REGION=local python3 run.py
-python3 aggregate.py --region local --type inference
+python3 aggregate.py --region local
 ```
 
-**Build the site locally:**
+For a local stdio MCP server over the published API:
 
 ```bash
-BASE_URL=https://example.com python3 sitegen.py   # → ./site/
-python3 -m pytest -q                              # tests
+python3 mcp_server.py
 ```
 
-See [`deploy/`](deploy/) for a container + a generic multi-region deployment guide.
+**[Inference probes, API access & site generation →](docs/USAGE.md)** · **[Deployment →](deploy/)**
 
-## Contributing
+## 🧪 Contributing
 
-Especially welcome:
+Add a provider, bring a new probe region, or improve the measurement code. See **[CONTRIBUTING.md](CONTRIBUTING.md)** for setup and checks.
 
-- **New providers** — add a `Provider(...)` entry in [`config.py`](config.py) (host + public models endpoint is enough for edge probes).
-- **New regions** — spin up a probe node in a new location and ship to a central node.
-- **Fixes & tests** — CI runs `pytest` + `ruff` on every push.
+---
 
-See **[CONTRIBUTING.md](CONTRIBUTING.md)** for dev setup, how to add a provider/region, and PR guidelines. Please keep the project's principle: **measured, not scraped, and honest about the dataset's age.**
+**Python · SQLite · JSON API · MCP · Cloudflare Pages**
 
-## License
+**[Code: MIT](LICENSE)** · **Data: CC-BY-4.0**, with attribution to [llmlatency.dev](https://llmlatency.dev).
 
-- **Code:** [MIT](LICENSE)
-- **Data** (rankings, API output): **CC-BY-4.0** — attribute [llmlatency.dev](https://llmlatency.dev).
+<details>
+<summary><b>📈 Latest daily snapshot</b></summary>
 
 <!-- DATASET:BEGIN -->
 
@@ -138,3 +85,5 @@ Measured latency across **46 AI inference providers** in 4 regions. Method: dist
 _Snapshot generated 2026-10-03T07:21:11Z — this table is regenerated daily._
 
 <!-- DATASET:END -->
+
+</details>
