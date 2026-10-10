@@ -38,11 +38,13 @@ REGION=local python3 run.py
 python3 aggregate.py --region local
 ```
 
-For a local stdio MCP server over the published API:
+For a local stdio MCP server over the published API (stdlib only, no keys):
 
 ```bash
 python3 mcp_server.py
 ```
+
+Tools: `get_ai_api_latency` (provider leaderboard per region), `get_provider_latency` (one provider across regions), `get_model_deprecations` (model shutdown calendar), `get_coding_agent_health` (Claude Code / Codex speed and accuracy drift). All read-only.
 
 **[Inference probes, API access & site generation →](docs/USAGE.md)** · **[Deployment →](deploy/)**
 

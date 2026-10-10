@@ -25,7 +25,12 @@ curl -X POST https://llmlatency.dev/mcp \
 
 ### Run the MCP server locally
 
-The hosted endpoint above needs no setup. If you prefer a local stdio server (or want to build it from source), `mcp_server.py` is a dependency-free proxy over the same public JSON API:
+The hosted endpoint above needs no setup. If you prefer a local stdio server (or want to build it from source), `mcp_server.py` is a dependency-free proxy over the same public JSON API. It exposes four read-only tools:
+
+- `get_ai_api_latency` — provider leaderboard (TTFB p50/p95, uptime) for one region or all regions
+- `get_provider_latency` — one provider's rank and latency in every region
+- `get_model_deprecations` — announced model shutdowns, replacements and provider notice periods
+- `get_coding_agent_health` — Claude Code / Codex speed, thinking tokens, TTFT and accuracy vs their own baseline
 
 ```bash
 python3 mcp_server.py            # stdio MCP, stdlib only
