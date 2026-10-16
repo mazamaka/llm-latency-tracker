@@ -63,19 +63,19 @@ Add a provider, bring a new probe region, or improve the measurement code. See *
 
 <!-- DATASET:BEGIN -->
 
-### Daily snapshot — 2026-10-15
+### Daily snapshot — 2026-10-16
 
 Measured latency across **46 AI inference providers** in 4 regions. Method: distributed edge (DNS→TCP→TLS→TTFB) + inference (TTFT) probes, last 24h. License: CC-BY-4.0.
 
 | Region | Fastest provider (p50) | p50 | p95 | Uptime |
 |---|---|---|---|---|
-| Asia (Tokyo) | fireworks | 18 ms | 68 ms | 100% |
-| Europe (Germany) | fireworks | 98 ms | 202 ms | 100% |
-| South America (São Paulo) | openrouter | 63 ms | 110 ms | 100% |
-| US (Central) | fireworks | 29 ms | 84 ms | 100% |
+| Asia (Tokyo) | fireworks | 21 ms | 63 ms | 100% |
+| Europe (Germany) | fireworks | 97 ms | 199 ms | 100% |
+| South America (São Paulo) | openrouter | 66 ms | 116 ms | 100% |
+| US (Central) | fireworks | 28 ms | 82 ms | 100% |
 
-- Full dataset: [`data/rankings/2026-10-15.json`](data/rankings/2026-10-15.json) ([latest](data/rankings/latest.json))
-- Citable archive (DOI): [`10.5281/zenodo.22764636`](https://doi.org/10.5281/zenodo.22764636) — daily aggregates, CC-BY-4.0
+- Full dataset: [`data/rankings/2026-10-16.json`](data/rankings/2026-10-16.json) ([latest](data/rankings/latest.json))
+- Citable archive (DOI): [`10.5281/zenodo.23388429`](https://doi.org/10.5281/zenodo.23388429) — daily aggregates, CC-BY-4.0
 - Hugging Face dataset: <https://huggingface.co/datasets/llmlatency/llm-latency-tracker>
 - Kaggle dataset: <https://www.kaggle.com/datasets/llmlatency/llm-latency-tracker>
 - Archived in Software Heritage: [`swh:1:snp:2778cbabd72a70a629ee35fbd5ac536d1ccb7a9a`](https://archive.softwareheritage.org/swh:1:snp:2778cbabd72a70a629ee35fbd5ac536d1ccb7a9a)
@@ -84,7 +84,7 @@ Measured latency across **46 AI inference providers** in 4 regions. Method: dist
 - Machine-readable API: <https://llmlatency.dev/api/rankings.json>
 - Model deprecation calendar: <https://llmlatency.dev/deprecations>
 
-_Snapshot generated 2026-10-15T07:23:04Z — this table is regenerated daily._
+_Snapshot generated 2026-10-16T07:22:59Z — this table is regenerated daily._
 
 <!-- DATASET:END -->
 
