@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-29T07:46:22Z",
+ "generated": "2026-10-30T07:46:14Z",
  "license": "CC-BY-4.0",
  "method": "distributed edge (DNS→TCP→TLS→TTFB) + inference (TTFT) probes, last 24h",
  "providers_tracked": 46,
@@ -9,15 +9,15 @@
    "network": [
     {
      "p50_ms": 19,
-     "p95_ms": 79,
+     "p95_ms": 66,
      "provider": "fireworks",
      "rank": 1,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 28,
-     "p95_ms": 85,
+     "p50_ms": 27,
+     "p95_ms": 70,
      "provider": "sambanova",
      "rank": 2,
      "samples": 288,
@@ -25,47 +25,47 @@
     },
     {
      "p50_ms": 58,
-     "p95_ms": 78,
-     "provider": "upstage",
+     "p95_ms": 144,
+     "provider": "openrouter",
      "rank": 3,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 58,
-     "p95_ms": 138,
-     "provider": "openrouter",
+     "p50_ms": 59,
+     "p95_ms": 82,
+     "provider": "upstage",
      "rank": 4,
      "samples": 288,
      "uptime_pct": 100
     },
     {
      "p50_ms": 66,
-     "p95_ms": 129,
+     "p95_ms": 131,
      "provider": "google",
      "rank": 5,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 94,
-     "p95_ms": 153,
+     "p50_ms": 95,
+     "p95_ms": 147,
      "provider": "glm",
      "rank": 6,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 115,
-     "p95_ms": 292,
+     "p50_ms": 116,
+     "p95_ms": 293,
      "provider": "meta-llama",
      "rank": 7,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 134,
-     "p95_ms": 219,
+     "p50_ms": 130,
+     "p95_ms": 213,
      "provider": "kimi",
      "rank": 8,
      "samples": 288,
@@ -73,15 +73,15 @@
     },
     {
      "p50_ms": 136,
-     "p95_ms": 160,
+     "p95_ms": 154,
      "provider": "ernie",
      "rank": 9,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 141,
-     "p95_ms": 525,
+     "p50_ms": 140,
+     "p95_ms": 765,
      "provider": "baichuan",
      "rank": 10,
      "samples": 288,
@@ -89,135 +89,135 @@
     },
     {
      "p50_ms": 146,
-     "p95_ms": 165,
+     "p95_ms": 167,
      "provider": "typesafe",
      "rank": 11,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 150,
-     "p95_ms": 218,
-     "provider": "qwen",
+     "p50_ms": 154,
+     "p95_ms": 220,
+     "provider": "novita",
      "rank": 12,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 156,
-     "p95_ms": 181,
+     "p50_ms": 155,
+     "p95_ms": 186,
      "provider": "baseten",
      "rank": 13,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 156,
-     "p95_ms": 246,
-     "provider": "novita",
+     "p50_ms": 162,
+     "p95_ms": 224,
+     "provider": "qwen",
      "rank": 14,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 171,
-     "p95_ms": 230,
+     "p50_ms": 169,
+     "p95_ms": 226,
      "provider": "cohere",
      "rank": 15,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 171,
-     "p95_ms": 263,
-     "provider": "xai",
+     "p50_ms": 172,
+     "p95_ms": 258,
+     "provider": "groq",
      "rank": 16,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 174,
-     "p95_ms": 242,
-     "provider": "groq",
+     "p50_ms": 175,
+     "p95_ms": 462,
+     "provider": "replicate",
      "rank": 17,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 176,
-     "p95_ms": 452,
-     "provider": "replicate",
+     "p50_ms": 175,
+     "p95_ms": 268,
+     "provider": "xai",
      "rank": 18,
      "samples": 288,
      "uptime_pct": 100
     },
     {
      "p50_ms": 180,
-     "p95_ms": 336,
+     "p95_ms": 332,
      "provider": "together",
      "rank": 19,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 186,
-     "p95_ms": 1519,
-     "provider": "yi-01ai",
-     "rank": 20,
-     "samples": 288,
-     "uptime_pct": 86
-    },
-    {
-     "p50_ms": 188,
-     "p95_ms": 267,
+     "p50_ms": 189,
+     "p95_ms": 282,
      "provider": "deepseek",
-     "rank": 21,
+     "rank": 20,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 208,
-     "p95_ms": 292,
-     "provider": "cerebras",
+     "p50_ms": 201,
+     "p95_ms": 1317,
+     "provider": "yi-01ai",
+     "rank": 21,
+     "samples": 288,
+     "uptime_pct": 82
+    },
+    {
+     "p50_ms": 210,
+     "p95_ms": 660,
+     "provider": "inference-net",
      "rank": 22,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 215,
-     "p95_ms": 490,
-     "provider": "inference-net",
+     "p50_ms": 210,
+     "p95_ms": 300,
+     "provider": "cerebras",
      "rank": 23,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 217,
-     "p95_ms": 311,
+     "p50_ms": 213,
+     "p95_ms": 296,
      "provider": "openai",
      "rank": 24,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 222,
-     "p95_ms": 264,
+     "p50_ms": 221,
+     "p95_ms": 267,
      "provider": "minimax",
      "rank": 25,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 225,
-     "p95_ms": 288,
+     "p50_ms": 223,
+     "p95_ms": 306,
      "provider": "anthropic",
      "rank": 26,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 235,
-     "p95_ms": 345,
+     "p50_ms": 228,
+     "p95_ms": 372,
      "provider": "writer",
      "rank": 27,
      "samples": 288,
@@ -225,79 +225,79 @@
     },
     {
      "p50_ms": 242,
-     "p95_ms": 522,
-     "provider": "perplexity",
+     "p95_ms": 962,
+     "provider": "iflytek",
      "rank": 28,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 243,
-     "p95_ms": 917,
-     "provider": "iflytek",
+     "p50_ms": 245,
+     "p95_ms": 376,
+     "provider": "perplexity",
      "rank": 29,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 252,
-     "p95_ms": 260,
+     "p50_ms": 251,
+     "p95_ms": 259,
      "provider": "sarvam",
      "rank": 30,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 256,
-     "p95_ms": 559,
+     "p50_ms": 261,
+     "p95_ms": 595,
      "provider": "reka",
      "rank": 31,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 276,
-     "p95_ms": 536,
+     "p50_ms": 279,
+     "p95_ms": 615,
      "provider": "friendli",
      "rank": 32,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 322,
-     "p95_ms": 1024,
-     "provider": "stepfun",
+     "p50_ms": 319,
+     "p95_ms": 404,
+     "provider": "mistral",
      "rank": 33,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 324,
-     "p95_ms": 398,
-     "provider": "mistral",
+     "p50_ms": 323,
+     "p95_ms": 439,
+     "provider": "ai21",
      "rank": 34,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 330,
-     "p95_ms": 393,
+     "p50_ms": 326,
+     "p95_ms": 391,
      "provider": "targon",
      "rank": 35,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 333,
-     "p95_ms": 442,
-     "provider": "ai21",
+     "p50_ms": 327,
+     "p95_ms": 901,
+     "provider": "stepfun",
      "rank": 36,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 374,
-     "p95_ms": 404,
+     "p50_ms": 375,
+     "p95_ms": 409,
      "provider": "siliconflow",
      "rank": 37,
      "samples": 288,
@@ -305,38 +305,38 @@
     },
     {
      "p50_ms": 450,
-     "p95_ms": 1021,
+     "p95_ms": 948,
      "provider": "deepinfra",
      "rank": 38,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 460,
-     "p95_ms": 1258,
+     "p50_ms": 458,
+     "p95_ms": 1727,
      "provider": "sensenova",
      "rank": 39,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 482,
-     "p95_ms": 683,
-     "provider": "nebius",
+     "p50_ms": 483,
+     "p95_ms": 561,
+     "provider": "hyperbolic",
      "rank": 40,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 487,
-     "p95_ms": 574,
-     "provider": "hyperbolic",
+     "p50_ms": 489,
+     "p95_ms": 702,
+     "provider": "nebius",
      "rank": 41,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 497,
+     "p50_ms": 498,
      "p95_ms": 541,
      "provider": "nscale",
      "rank": 42,
@@ -344,32 +344,32 @@
      "uptime_pct": 100
     },
     {
-     "p50_ms": 516,
-     "p95_ms": 1197,
+     "p50_ms": 509,
+     "p95_ms": 1169,
      "provider": "featherless",
      "rank": 43,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 560,
-     "p95_ms": 771,
+     "p50_ms": 577,
+     "p95_ms": 841,
      "provider": "aleph-alpha",
      "rank": 44,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 582,
-     "p95_ms": 1829,
+     "p50_ms": 583,
+     "p95_ms": 2702,
      "provider": "doubao",
      "rank": 45,
      "samples": 288,
-     "uptime_pct": 99
+     "uptime_pct": 100
     },
     {
-     "p50_ms": 1116,
-     "p95_ms": 1125,
+     "p50_ms": 1115,
+     "p95_ms": 1126,
      "provider": "hunyuan",
      "rank": 46,
      "samples": 288,
@@ -382,15 +382,15 @@
    "network": [
     {
      "p50_ms": 19,
-     "p95_ms": 59,
+     "p95_ms": 57,
      "provider": "fireworks",
      "rank": 1,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 32,
-     "p95_ms": 98,
+     "p50_ms": 31,
+     "p95_ms": 76,
      "provider": "google",
      "rank": 2,
      "samples": 288,
@@ -398,30 +398,30 @@
     },
     {
      "p50_ms": 36,
-     "p95_ms": 67,
+     "p95_ms": 52,
      "provider": "nebius",
      "rank": 3,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 58,
-     "p95_ms": 109,
+     "p50_ms": 52,
+     "p95_ms": 111,
      "provider": "meta-llama",
      "rank": 4,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 61,
-     "p95_ms": 91,
+     "p50_ms": 63,
+     "p95_ms": 86,
      "provider": "aleph-alpha",
      "rank": 5,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 71,
+     "p50_ms": 72,
      "p95_ms": 74,
      "provider": "nscale",
      "rank": 6,
@@ -429,280 +429,280 @@
      "uptime_pct": 100
     },
     {
-     "p50_ms": 75,
-     "p95_ms": 97,
+     "p50_ms": 81,
+     "p95_ms": 99,
      "provider": "openrouter",
      "rank": 7,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 99,
-     "p95_ms": 134,
+     "p50_ms": 101,
+     "p95_ms": 150,
      "provider": "mistral",
      "rank": 8,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 102,
-     "p95_ms": 508,
+     "p50_ms": 111,
+     "p95_ms": 477,
      "provider": "inference-net",
      "rank": 9,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 129,
-     "p95_ms": 140,
+     "p50_ms": 130,
+     "p95_ms": 141,
      "provider": "baseten",
      "rank": 10,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 137,
-     "p95_ms": 153,
+     "p50_ms": 138,
+     "p95_ms": 155,
      "provider": "cohere",
      "rank": 11,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 144,
-     "p95_ms": 162,
+     "p50_ms": 143,
+     "p95_ms": 158,
      "provider": "glm",
      "rank": 12,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 154,
-     "p95_ms": 166,
+     "p50_ms": 156,
+     "p95_ms": 175,
      "provider": "typesafe",
      "rank": 13,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 155,
-     "p95_ms": 209,
+     "p50_ms": 159,
+     "p95_ms": 339,
      "provider": "replicate",
      "rank": 14,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 163,
-     "p95_ms": 185,
+     "p50_ms": 166,
+     "p95_ms": 193,
      "provider": "perplexity",
      "rank": 15,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 167,
-     "p95_ms": 194,
-     "provider": "cerebras",
+     "p50_ms": 170,
+     "p95_ms": 200,
+     "provider": "anthropic",
      "rank": 16,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 168,
-     "p95_ms": 198,
-     "provider": "anthropic",
+     "p50_ms": 170,
+     "p95_ms": 189,
+     "provider": "cerebras",
      "rank": 17,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 180,
-     "p95_ms": 377,
-     "provider": "reka",
+     "p50_ms": 176,
+     "p95_ms": 580,
+     "provider": "baichuan",
      "rank": 18,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 184,
-     "p95_ms": 616,
-     "provider": "baichuan",
+     "p50_ms": 187,
+     "p95_ms": 292,
+     "provider": "reka",
      "rank": 19,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 203,
-     "p95_ms": 286,
+     "p50_ms": 208,
+     "p95_ms": 284,
      "provider": "writer",
      "rank": 20,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 210,
-     "p95_ms": 230,
-     "provider": "groq",
+     "p50_ms": 215,
+     "p95_ms": 772,
+     "provider": "yi-01ai",
      "rank": 21,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 214,
-     "p95_ms": 237,
+     "p50_ms": 217,
+     "p95_ms": 250,
      "provider": "xai",
      "rank": 22,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 215,
-     "p95_ms": 792,
-     "provider": "yi-01ai",
+     "p50_ms": 218,
+     "p95_ms": 243,
+     "provider": "groq",
      "rank": 23,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 215,
-     "p95_ms": 275,
+     "p50_ms": 219,
+     "p95_ms": 281,
      "provider": "openai",
      "rank": 24,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 226,
-     "p95_ms": 255,
-     "provider": "novita",
+     "p50_ms": 231,
+     "p95_ms": 274,
+     "provider": "together",
      "rank": 25,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 226,
-     "p95_ms": 265,
-     "provider": "together",
+     "p50_ms": 234,
+     "p95_ms": 279,
+     "provider": "novita",
      "rank": 26,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 235,
-     "p95_ms": 380,
+     "p50_ms": 234,
+     "p95_ms": 341,
      "provider": "kimi",
      "rank": 27,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 255,
-     "p95_ms": 408,
-     "provider": "friendli",
+     "p50_ms": 259,
+     "p95_ms": 261,
+     "provider": "siliconflow",
      "rank": 28,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 259,
-     "p95_ms": 260,
-     "provider": "siliconflow",
+     "p50_ms": 263,
+     "p95_ms": 276,
+     "provider": "sarvam",
      "rank": 29,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 261,
-     "p95_ms": 269,
-     "provider": "sarvam",
+     "p50_ms": 267,
+     "p95_ms": 335,
+     "provider": "deepseek",
      "rank": 30,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 267,
-     "p95_ms": 327,
-     "provider": "deepseek",
+     "p50_ms": 286,
+     "p95_ms": 416,
+     "provider": "friendli",
      "rank": 31,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 292,
-     "p95_ms": 314,
+     "p50_ms": 291,
+     "p95_ms": 315,
      "provider": "ernie",
      "rank": 32,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 313,
-     "p95_ms": 1048,
+     "p50_ms": 302,
+     "p95_ms": 866,
      "provider": "iflytek",
      "rank": 33,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 322,
-     "p95_ms": 339,
-     "provider": "sambanova",
+     "p50_ms": 320,
+     "p95_ms": 348,
+     "provider": "minimax",
      "rank": 34,
-     "samples": 288,
-     "uptime_pct": 99
-    },
-    {
-     "p50_ms": 323,
-     "p95_ms": 1398,
-     "provider": "targon",
-     "rank": 35,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 324,
-     "p95_ms": 390,
-     "provider": "minimax",
+     "p50_ms": 325,
+     "p95_ms": 340,
+     "provider": "sambanova",
+     "rank": 35,
+     "samples": 288,
+     "uptime_pct": 99
+    },
+    {
+     "p50_ms": 357,
+     "p95_ms": 794,
+     "provider": "doubao",
      "rank": 36,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 353,
-     "p95_ms": 863,
-     "provider": "doubao",
+     "p50_ms": 361,
+     "p95_ms": 991,
+     "provider": "sensenova",
      "rank": 37,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 357,
-     "p95_ms": 997,
-     "provider": "sensenova",
+     "p50_ms": 384,
+     "p95_ms": 480,
+     "provider": "ai21",
      "rank": 38,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 371,
-     "p95_ms": 501,
-     "provider": "ai21",
+     "p50_ms": 390,
+     "p95_ms": 1022,
+     "provider": "targon",
      "rank": 39,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 398,
-     "p95_ms": 527,
+     "p50_ms": 397,
+     "p95_ms": 447,
      "provider": "qwen",
      "rank": 40,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 410,
-     "p95_ms": 1038,
+     "p50_ms": 412,
+     "p95_ms": 1073,
      "provider": "stepfun",
      "rank": 41,
      "samples": 288,
@@ -710,39 +710,39 @@
     },
     {
      "p50_ms": 526,
-     "p95_ms": 1082,
+     "p95_ms": 969,
      "provider": "deepinfra",
      "rank": 42,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 530,
-     "p95_ms": 550,
+     "p50_ms": 539,
+     "p95_ms": 594,
      "provider": "upstage",
      "rank": 43,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 669,
-     "p95_ms": 1097,
+     "p50_ms": 663,
+     "p95_ms": 972,
      "provider": "featherless",
      "rank": 44,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 675,
-     "p95_ms": 799,
+     "p50_ms": 699,
+     "p95_ms": 800,
      "provider": "hyperbolic",
      "rank": 45,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 1538,
-     "p95_ms": 1586,
+     "p50_ms": 1537,
+     "p95_ms": 1587,
      "provider": "hunyuan",
      "rank": 46,
      "samples": 288,
@@ -754,48 +754,48 @@
    "label": "South America (São Paulo)",
    "network": [
     {
-     "p50_ms": 64,
-     "p95_ms": 100,
+     "p50_ms": 62,
+     "p95_ms": 99,
      "provider": "openrouter",
      "rank": 1,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 141,
-     "p95_ms": 716,
+     "p50_ms": 139,
+     "p95_ms": 714,
      "provider": "google",
      "rank": 2,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 154,
-     "p95_ms": 168,
+     "p50_ms": 155,
+     "p95_ms": 170,
      "provider": "baseten",
      "rank": 3,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 164,
-     "p95_ms": 190,
+     "p50_ms": 165,
+     "p95_ms": 193,
      "provider": "cohere",
      "rank": 4,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 183,
-     "p95_ms": 211,
+     "p50_ms": 177,
+     "p95_ms": 199,
      "provider": "typesafe",
      "rank": 5,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 195,
-     "p95_ms": 237,
+     "p50_ms": 194,
+     "p95_ms": 242,
      "provider": "cerebras",
      "rank": 6,
      "samples": 288,
@@ -803,135 +803,135 @@
     },
     {
      "p50_ms": 196,
-     "p95_ms": 244,
-     "provider": "anthropic",
+     "p95_ms": 489,
+     "provider": "replicate",
      "rank": 7,
      "samples": 288,
      "uptime_pct": 100
     },
     {
      "p50_ms": 197,
-     "p95_ms": 493,
-     "provider": "replicate",
+     "p95_ms": 247,
+     "provider": "anthropic",
      "rank": 8,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 212,
-     "p95_ms": 292,
-     "provider": "reka",
+     "p50_ms": 205,
+     "p95_ms": 452,
+     "provider": "perplexity",
      "rank": 9,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 212,
-     "p95_ms": 444,
-     "provider": "perplexity",
+     "p50_ms": 210,
+     "p95_ms": 299,
+     "provider": "writer",
      "rank": 10,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 212,
-     "p95_ms": 260,
-     "provider": "writer",
+     "p50_ms": 218,
+     "p95_ms": 448,
+     "provider": "reka",
      "rank": 11,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 230,
-     "p95_ms": 304,
-     "provider": "meta-llama",
+     "p50_ms": 229,
+     "p95_ms": 393,
+     "provider": "xai",
      "rank": 12,
      "samples": 288,
      "uptime_pct": 100
     },
     {
      "p50_ms": 235,
-     "p95_ms": 414,
-     "provider": "xai",
+     "p95_ms": 272,
+     "provider": "groq",
      "rank": 13,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 235,
-     "p95_ms": 279,
-     "provider": "groq",
+     "p50_ms": 237,
+     "p95_ms": 303,
+     "provider": "meta-llama",
      "rank": 14,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 237,
-     "p95_ms": 461,
+     "p50_ms": 244,
+     "p95_ms": 657,
      "provider": "inference-net",
      "rank": 15,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 249,
-     "p95_ms": 289,
+     "p50_ms": 246,
+     "p95_ms": 306,
      "provider": "novita",
      "rank": 16,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 256,
-     "p95_ms": 276,
-     "provider": "fireworks",
+     "p50_ms": 252,
+     "p95_ms": 439,
+     "provider": "openai",
      "rank": 17,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 262,
-     "p95_ms": 436,
-     "provider": "openai",
+     "p50_ms": 256,
+     "p95_ms": 274,
+     "provider": "fireworks",
      "rank": 18,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 268,
-     "p95_ms": 321,
+     "p50_ms": 262,
+     "p95_ms": 328,
      "provider": "mistral",
      "rank": 19,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 278,
-     "p95_ms": 433,
-     "provider": "friendli",
+     "p50_ms": 282,
+     "p95_ms": 719,
+     "provider": "together",
      "rank": 20,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 280,
-     "p95_ms": 673,
-     "provider": "together",
+     "p50_ms": 284,
+     "p95_ms": 288,
+     "provider": "siliconflow",
      "rank": 21,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 285,
-     "p95_ms": 289,
-     "provider": "siliconflow",
+     "p50_ms": 288,
+     "p95_ms": 458,
+     "provider": "friendli",
      "rank": 22,
      "samples": 288,
      "uptime_pct": 100
     },
     {
      "p50_ms": 320,
-     "p95_ms": 331,
+     "p95_ms": 330,
      "provider": "targon",
      "rank": 23,
      "samples": 288,
@@ -939,63 +939,63 @@
     },
     {
      "p50_ms": 330,
-     "p95_ms": 1166,
+     "p95_ms": 1200,
      "provider": "yi-01ai",
      "rank": 24,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 346,
-     "p95_ms": 472,
+     "p50_ms": 338,
+     "p95_ms": 453,
      "provider": "ai21",
      "rank": 25,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 359,
-     "p95_ms": 1254,
+     "p50_ms": 358,
+     "p95_ms": 1245,
      "provider": "baichuan",
      "rank": 26,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 367,
-     "p95_ms": 530,
+     "p50_ms": 359,
+     "p95_ms": 436,
      "provider": "kimi",
      "rank": 27,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 374,
-     "p95_ms": 392,
+     "p50_ms": 376,
+     "p95_ms": 442,
      "provider": "sambanova",
      "rank": 28,
      "samples": 288,
-     "uptime_pct": 99
+     "uptime_pct": 100
     },
     {
      "p50_ms": 379,
-     "p95_ms": 387,
+     "p95_ms": 388,
      "provider": "nebius",
      "rank": 29,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 409,
-     "p95_ms": 450,
+     "p50_ms": 410,
+     "p95_ms": 454,
      "provider": "ernie",
      "rank": 30,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 436,
-     "p95_ms": 481,
+     "p50_ms": 435,
+     "p95_ms": 495,
      "provider": "deepseek",
      "rank": 31,
      "samples": 288,
@@ -1003,111 +1003,111 @@
     },
     {
      "p50_ms": 450,
-     "p95_ms": 453,
+     "p95_ms": 454,
      "provider": "nscale",
      "rank": 32,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 454,
-     "p95_ms": 493,
+     "p50_ms": 457,
+     "p95_ms": 546,
      "provider": "aleph-alpha",
      "rank": 33,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 481,
-     "p95_ms": 508,
+     "p50_ms": 482,
+     "p95_ms": 511,
      "provider": "minimax",
      "rank": 34,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 539,
-     "p95_ms": 1004,
+     "p50_ms": 538,
+     "p95_ms": 986,
      "provider": "deepinfra",
      "rank": 35,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 542,
-     "p95_ms": 704,
+     "p50_ms": 541,
+     "p95_ms": 569,
      "provider": "glm",
      "rank": 36,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 619,
-     "p95_ms": 710,
+     "p50_ms": 626,
+     "p95_ms": 709,
      "provider": "upstage",
      "rank": 37,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 623,
-     "p95_ms": 643,
-     "provider": "sarvam",
+     "p50_ms": 632,
+     "p95_ms": 1560,
+     "provider": "sensenova",
      "rank": 38,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 631,
-     "p95_ms": 1540,
-     "provider": "sensenova",
+     "p50_ms": 635,
+     "p95_ms": 649,
+     "provider": "sarvam",
      "rank": 39,
      "samples": 288,
      "uptime_pct": 100
     },
     {
      "p50_ms": 655,
-     "p95_ms": 1586,
+     "p95_ms": 1583,
      "provider": "iflytek",
      "rank": 40,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 656,
-     "p95_ms": 1621,
+     "p50_ms": 661,
+     "p95_ms": 1582,
      "provider": "stepfun",
      "rank": 41,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 700,
-     "p95_ms": 1680,
+     "p50_ms": 702,
+     "p95_ms": 1625,
      "provider": "doubao",
      "rank": 42,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 703,
-     "p95_ms": 757,
+     "p50_ms": 706,
+     "p95_ms": 760,
      "provider": "qwen",
      "rank": 43,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 772,
-     "p95_ms": 1520,
+     "p50_ms": 767,
+     "p95_ms": 1357,
      "provider": "featherless",
      "rank": 44,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 863,
-     "p95_ms": 938,
+     "p50_ms": 848,
+     "p95_ms": 935,
      "provider": "hyperbolic",
      "rank": 45,
      "samples": 288,
@@ -1115,7 +1115,7 @@
     },
     {
      "p50_ms": 1659,
-     "p95_ms": 1719,
+     "p95_ms": 1748,
      "provider": "hunyuan",
      "rank": 46,
      "samples": 288,
@@ -1128,95 +1128,95 @@
    "network": [
     {
      "p50_ms": 32,
-     "p95_ms": 85,
+     "p95_ms": 90,
      "provider": "fireworks",
      "rank": 1,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 47,
-     "p95_ms": 58,
-     "provider": "baseten",
+     "p50_ms": 46,
+     "p95_ms": 96,
+     "provider": "meta-llama",
      "rank": 2,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 48,
-     "p95_ms": 106,
-     "provider": "meta-llama",
+     "p50_ms": 47,
+     "p95_ms": 59,
+     "provider": "baseten",
      "rank": 3,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 56,
-     "p95_ms": 144,
+     "p50_ms": 55,
+     "p95_ms": 161,
      "provider": "google",
      "rank": 4,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 63,
-     "p95_ms": 122,
+     "p50_ms": 62,
+     "p95_ms": 117,
      "provider": "cohere",
      "rank": 5,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 63,
-     "p95_ms": 154,
+     "p50_ms": 68,
+     "p95_ms": 142,
      "provider": "openrouter",
      "rank": 6,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 77,
-     "p95_ms": 94,
-     "provider": "typesafe",
+     "p50_ms": 78,
+     "p95_ms": 153,
+     "provider": "cerebras",
      "rank": 7,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 79,
-     "p95_ms": 154,
-     "provider": "cerebras",
+     "p50_ms": 78,
+     "p95_ms": 105,
+     "provider": "typesafe",
      "rank": 8,
      "samples": 288,
      "uptime_pct": 100
     },
     {
      "p50_ms": 79,
-     "p95_ms": 110,
+     "p95_ms": 114,
      "provider": "siliconflow",
      "rank": 9,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 80,
-     "p95_ms": 155,
+     "p50_ms": 83,
+     "p95_ms": 154,
      "provider": "novita",
      "rank": 10,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 87,
-     "p95_ms": 154,
-     "provider": "replicate",
+     "p50_ms": 91,
+     "p95_ms": 108,
+     "provider": "targon",
      "rank": 11,
      "samples": 288,
      "uptime_pct": 100
     },
     {
      "p50_ms": 92,
-     "p95_ms": 157,
+     "p95_ms": 163,
      "provider": "anthropic",
      "rank": 12,
      "samples": 288,
@@ -1224,111 +1224,111 @@
     },
     {
      "p50_ms": 92,
-     "p95_ms": 147,
+     "p95_ms": 162,
      "provider": "perplexity",
      "rank": 13,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 92,
-     "p95_ms": 109,
-     "provider": "targon",
+     "p50_ms": 94,
+     "p95_ms": 157,
+     "provider": "replicate",
      "rank": 14,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 93,
-     "p95_ms": 165,
+     "p50_ms": 99,
+     "p95_ms": 216,
      "provider": "reka",
      "rank": 15,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 101,
-     "p95_ms": 301,
+     "p50_ms": 107,
+     "p95_ms": 377,
      "provider": "inference-net",
      "rank": 16,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 115,
-     "p95_ms": 202,
-     "provider": "xai",
+     "p50_ms": 116,
+     "p95_ms": 164,
+     "provider": "writer",
      "rank": 17,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 117,
-     "p95_ms": 173,
-     "provider": "writer",
+     "p50_ms": 116,
+     "p95_ms": 210,
+     "provider": "xai",
      "rank": 18,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 118,
-     "p95_ms": 196,
+     "p50_ms": 123,
+     "p95_ms": 193,
      "provider": "groq",
      "rank": 19,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 129,
-     "p95_ms": 235,
-     "provider": "hyperbolic",
+     "p50_ms": 128,
+     "p95_ms": 249,
+     "provider": "together",
      "rank": 20,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 129,
-     "p95_ms": 195,
-     "provider": "together",
+     "p50_ms": 128,
+     "p95_ms": 271,
+     "provider": "hyperbolic",
      "rank": 21,
      "samples": 288,
      "uptime_pct": 100
     },
     {
      "p50_ms": 144,
-     "p95_ms": 240,
+     "p95_ms": 228,
      "provider": "openai",
      "rank": 22,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 162,
-     "p95_ms": 566,
+     "p50_ms": 168,
+     "p95_ms": 651,
      "provider": "deepinfra",
      "rank": 23,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 168,
-     "p95_ms": 327,
-     "provider": "friendli",
+     "p50_ms": 172,
+     "p95_ms": 268,
+     "provider": "sambanova",
      "rank": 24,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 168,
-     "p95_ms": 222,
-     "provider": "sambanova",
+     "p50_ms": 174,
+     "p95_ms": 320,
+     "provider": "friendli",
      "rank": 25,
      "samples": 288,
-     "uptime_pct": 99
+     "uptime_pct": 100
     },
     {
-     "p50_ms": 178,
-     "p95_ms": 219,
+     "p50_ms": 179,
+     "p95_ms": 212,
      "provider": "nebius",
      "rank": 26,
      "samples": 288,
@@ -1336,7 +1336,7 @@
     },
     {
      "p50_ms": 193,
-     "p95_ms": 294,
+     "p95_ms": 298,
      "provider": "mistral",
      "rank": 27,
      "samples": 288,
@@ -1344,47 +1344,47 @@
     },
     {
      "p50_ms": 214,
-     "p95_ms": 850,
-     "provider": "yi-01ai",
+     "p95_ms": 350,
+     "provider": "ai21",
      "rank": 28,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 217,
-     "p95_ms": 364,
-     "provider": "ai21",
+     "p50_ms": 216,
+     "p95_ms": 781,
+     "provider": "yi-01ai",
      "rank": 29,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 235,
-     "p95_ms": 243,
-     "provider": "nscale",
+     "p50_ms": 234,
+     "p95_ms": 833,
+     "provider": "baichuan",
      "rank": 30,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 237,
-     "p95_ms": 860,
-     "provider": "baichuan",
+     "p50_ms": 235,
+     "p95_ms": 244,
+     "provider": "nscale",
      "rank": 31,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 252,
-     "p95_ms": 413,
+     "p50_ms": 250,
+     "p95_ms": 292,
      "provider": "glm",
      "rank": 32,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 262,
-     "p95_ms": 330,
+     "p50_ms": 265,
+     "p95_ms": 322,
      "provider": "aleph-alpha",
      "rank": 33,
      "samples": 288,
@@ -1392,62 +1392,62 @@
     },
     {
      "p50_ms": 272,
-     "p95_ms": 302,
+     "p95_ms": 316,
      "provider": "ernie",
      "rank": 34,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 276,
-     "p95_ms": 358,
+     "p50_ms": 275,
+     "p95_ms": 430,
      "provider": "kimi",
      "rank": 35,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 325,
-     "p95_ms": 399,
+     "p50_ms": 320,
+     "p95_ms": 391,
      "provider": "deepseek",
      "rank": 36,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 346,
-     "p95_ms": 367,
+     "p50_ms": 342,
+     "p95_ms": 364,
      "provider": "minimax",
      "rank": 37,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 352,
-     "p95_ms": 375,
+     "p50_ms": 355,
+     "p95_ms": 384,
      "provider": "upstage",
      "rank": 38,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 364,
-     "p95_ms": 1064,
+     "p50_ms": 360,
+     "p95_ms": 916,
      "provider": "featherless",
      "rank": 39,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 386,
-     "p95_ms": 1052,
+     "p50_ms": 382,
+     "p95_ms": 1030,
      "provider": "stepfun",
      "rank": 40,
      "samples": 288,
-     "uptime_pct": 99
+     "uptime_pct": 100
     },
     {
-     "p50_ms": 396,
+     "p50_ms": 390,
      "p95_ms": 1090,
      "provider": "sensenova",
      "rank": 41,
@@ -1455,40 +1455,40 @@
      "uptime_pct": 100
     },
     {
-     "p50_ms": 421,
-     "p95_ms": 1119,
-     "provider": "iflytek",
+     "p50_ms": 410,
+     "p95_ms": 460,
+     "provider": "qwen",
      "rank": 42,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 421,
-     "p95_ms": 466,
-     "provider": "qwen",
+     "p50_ms": 413,
+     "p95_ms": 1074,
+     "provider": "iflytek",
      "rank": 43,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 465,
-     "p95_ms": 1173,
-     "provider": "doubao",
+     "p50_ms": 454,
+     "p95_ms": 512,
+     "provider": "sarvam",
      "rank": 44,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 501,
-     "p95_ms": 517,
-     "provider": "sarvam",
+     "p50_ms": 460,
+     "p95_ms": 1113,
+     "provider": "doubao",
      "rank": 45,
      "samples": 288,
      "uptime_pct": 100
     },
     {
-     "p50_ms": 1386,
-     "p95_ms": 1428,
+     "p50_ms": 1383,
+     "p95_ms": 1461,
      "provider": "hunyuan",
      "rank": 46,
      "samples": 288,
