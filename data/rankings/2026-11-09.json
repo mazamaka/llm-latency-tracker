@@ -1,0 +1,1508 @@
+{
+ "generated": "2026-11-09T07:46:37Z",
+ "license": "CC-BY-4.0",
+ "method": "distributed edge (DNS→TCP→TLS→TTFB) + inference (TTFT) probes, last 24h",
+ "moved_regions": [
+  {
+   "label": "South America (São Paulo)",
+   "measured_until": "2026-11-08",
+   "page": "https://llmlatency.dev/region/sa-east",
+   "region": "sa-east",
+   "successor": "sa-west"
+  }
+ ],
+ "providers_tracked": 45,
+ "regions": {
+  "ap-tokyo": {
+   "label": "Asia (Tokyo)",
+   "network": [
+    {
+     "p50_ms": 21,
+     "p95_ms": 63,
+     "provider": "fireworks",
+     "rank": 1,
+     "samples": 288,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 27,
+     "p95_ms": 452,
+     "provider": "sambanova",
+     "rank": 2,
+     "samples": 288,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 53,
+     "p95_ms": 109,
+     "provider": "openrouter",
+     "rank": 3,
+     "samples": 288,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 58,
+     "p95_ms": 79,
+     "provider": "upstage",
+     "rank": 4,
+     "samples": 288,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 62,
+     "p95_ms": 119,
+     "provider": "google",
+     "rank": 5,
+     "samples": 288,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 92,
+     "p95_ms": 139,
+     "provider": "glm",
+     "rank": 6,
+     "samples": 288,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 116,
+     "p95_ms": 291,
+     "provider": "meta-llama",
+     "rank": 7,
+     "samples": 288,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 126,
+     "p95_ms": 204,
+     "provider": "kimi",
+     "rank": 8,
+     "samples": 288,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 136,
+     "p95_ms": 166,
+     "provider": "ernie",
+     "rank": 9,
+     "samples": 288,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 140,
+     "p95_ms": 795,
+     "provider": "baichuan",
+     "rank": 10,
+     "samples": 288,
+     "uptime_pct": 99
+    },
+    {
+     "p50_ms": 145,
+     "p95_ms": 152,
+     "provider": "typesafe",
+     "rank": 11,
+     "samples": 288,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 147,
+     "p95_ms": 196,
+     "provider": "novita",
+     "rank": 12,
+     "samples": 288,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 158,
+     "p95_ms": 216,
+     "provider": "qwencloud",
+     "rank": 13,
+     "samples": 266,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 160,
+     "p95_ms": 216,
+     "provider": "groq",
+     "rank": 14,
+     "samples": 288,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 160,
+     "p95_ms": 288,
+     "provider": "together",
+     "rank": 15,
+     "samples": 288,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 161,
+     "p95_ms": 186,
+     "provider": "baseten",
+     "rank": 16,
+     "samples": 288,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 165,
+     "p95_ms": 230,
+     "provider": "qwen",
+     "rank": 17,
+     "samples": 288,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 169,
+     "p95_ms": 251,
+     "provider": "xai",
+     "rank": 18,
+     "samples": 288,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 172,
+     "p95_ms": 218,
+     "provider": "cohere",
+     "rank": 19,
+     "samples": 288,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 176,
+     "p95_ms": 457,
+     "provider": "replicate",
+     "rank": 20,
+     "samples": 288,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 180,
+     "p95_ms": 238,
+     "provider": "deepseek",
+     "rank": 21,
+     "samples": 288,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 201,
+     "p95_ms": 247,
+     "provider": "cerebras",
+     "rank": 22,
+     "samples": 288,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 211,
+     "p95_ms": 291,
+     "provider": "openai",
+     "rank": 23,
+     "samples": 288,
+     "uptime_pct": 99
+    },
+    {
+     "p50_ms": 223,
+     "p95_ms": 284,
+     "provider": "anthropic",
+     "rank": 24,
+     "samples": 288,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 223,
+     "p95_ms": 333,
+     "provider": "perplexity",
+     "rank": 25,
+     "samples": 288,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 225,
+     "p95_ms": 269,
+     "provider": "minimax",
+     "rank": 26,
+     "samples": 288,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 239,
+     "p95_ms": 929,
+     "provider": "iflytek",
+     "rank": 27,
+     "samples": 288,
+     "uptime_pct": 99
+    },
+    {
+     "p50_ms": 244,
+     "p95_ms": 276,
+     "provider": "writer",
+     "rank": 28,
+     "samples": 288,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 245,
+     "p95_ms": 297,
+     "provider": "tencent-tokenhub",
+     "rank": 29,
+     "samples": 288,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 246,
+     "p95_ms": 335,
+     "provider": "reka",
+     "rank": 30,
+     "samples": 288,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 252,
+     "p95_ms": 259,
+     "provider": "sarvam",
+     "rank": 31,
+     "samples": 288,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 279,
+     "p95_ms": 452,
+     "provider": "friendli",
+     "rank": 32,
+     "samples": 288,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 318,
+     "p95_ms": 426,
+     "provider": "ai21",
+     "rank": 33,
+     "samples": 288,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 325,
+     "p95_ms": 825,
+     "provider": "stepfun",
+     "rank": 34,
+     "samples": 288,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 331,
+     "p95_ms": 407,
+     "provider": "mistral",
+     "rank": 35,
+     "samples": 288,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 332,
+     "p95_ms": 632,
+     "provider": "inference-net",
+     "rank": 36,
+     "samples": 288,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 372,
+     "p95_ms": 401,
+     "provider": "siliconflow",
+     "rank": 37,
+     "samples": 288,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 388,
+     "p95_ms": 442,
+     "provider": "hyperbolic",
+     "rank": 38,
+     "samples": 288,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 429,
+     "p95_ms": 1103,
+     "provider": "sensenova",
+     "rank": 39,
+     "samples": 288,
+     "uptime_pct": 98
+    },
+    {
+     "p50_ms": 431,
+     "p95_ms": 790,
+     "provider": "featherless",
+     "rank": 40,
+     "samples": 288,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 444,
+     "p95_ms": 900,
+     "provider": "deepinfra",
+     "rank": 41,
+     "samples": 288,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 467,
+     "p95_ms": 502,
+     "provider": "nebius",
+     "rank": 42,
+     "samples": 288,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 495,
+     "p95_ms": 1204,
+     "provider": "doubao",
+     "rank": 43,
+     "samples": 288,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 497,
+     "p95_ms": 518,
+     "provider": "nscale",
+     "rank": 44,
+     "samples": 288,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 547,
+     "p95_ms": 588,
+     "provider": "aleph-alpha",
+     "rank": 45,
+     "samples": 288,
+     "uptime_pct": 100
+    }
+   ]
+  },
+  "eu-hetzner": {
+   "label": "Europe (Germany)",
+   "network": [
+    {
+     "p50_ms": 15,
+     "p95_ms": 90,
+     "provider": "fireworks",
+     "rank": 1,
+     "samples": 293,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 33,
+     "p95_ms": 98,
+     "provider": "nebius",
+     "rank": 2,
+     "samples": 292,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 57,
+     "p95_ms": 93,
+     "provider": "aleph-alpha",
+     "rank": 3,
+     "samples": 292,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 69,
+     "p95_ms": 73,
+     "provider": "nscale",
+     "rank": 4,
+     "samples": 292,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 87,
+     "p95_ms": 134,
+     "provider": "meta-llama",
+     "rank": 5,
+     "samples": 292,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 96,
+     "p95_ms": 102,
+     "provider": "google",
+     "rank": 6,
+     "samples": 293,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 98,
+     "p95_ms": 105,
+     "provider": "openrouter",
+     "rank": 7,
+     "samples": 292,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 126,
+     "p95_ms": 131,
+     "provider": "baseten",
+     "rank": 8,
+     "samples": 292,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 129,
+     "p95_ms": 207,
+     "provider": "mistral",
+     "rank": 9,
+     "samples": 292,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 134,
+     "p95_ms": 194,
+     "provider": "cohere",
+     "rank": 10,
+     "samples": 292,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 144,
+     "p95_ms": 200,
+     "provider": "glm",
+     "rank": 11,
+     "samples": 292,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 156,
+     "p95_ms": 167,
+     "provider": "typesafe",
+     "rank": 12,
+     "samples": 292,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 171,
+     "p95_ms": 327,
+     "provider": "replicate",
+     "rank": 13,
+     "samples": 292,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 183,
+     "p95_ms": 617,
+     "provider": "baichuan",
+     "rank": 14,
+     "samples": 291,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 186,
+     "p95_ms": 275,
+     "provider": "reka",
+     "rank": 15,
+     "samples": 292,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 188,
+     "p95_ms": 207,
+     "provider": "perplexity",
+     "rank": 16,
+     "samples": 292,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 188,
+     "p95_ms": 207,
+     "provider": "cerebras",
+     "rank": 17,
+     "samples": 292,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 196,
+     "p95_ms": 206,
+     "provider": "anthropic",
+     "rank": 18,
+     "samples": 292,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 212,
+     "p95_ms": 222,
+     "provider": "groq",
+     "rank": 19,
+     "samples": 292,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 218,
+     "p95_ms": 321,
+     "provider": "xai",
+     "rank": 20,
+     "samples": 292,
+     "uptime_pct": 99
+    },
+    {
+     "p50_ms": 224,
+     "p95_ms": 290,
+     "provider": "writer",
+     "rank": 21,
+     "samples": 292,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 228,
+     "p95_ms": 343,
+     "provider": "openai",
+     "rank": 22,
+     "samples": 292,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 230,
+     "p95_ms": 314,
+     "provider": "together",
+     "rank": 23,
+     "samples": 292,
+     "uptime_pct": 99
+    },
+    {
+     "p50_ms": 231,
+     "p95_ms": 257,
+     "provider": "novita",
+     "rank": 24,
+     "samples": 292,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 248,
+     "p95_ms": 250,
+     "provider": "siliconflow",
+     "rank": 25,
+     "samples": 292,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 251,
+     "p95_ms": 396,
+     "provider": "friendli",
+     "rank": 26,
+     "samples": 292,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 257,
+     "p95_ms": 636,
+     "provider": "inference-net",
+     "rank": 27,
+     "samples": 292,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 261,
+     "p95_ms": 274,
+     "provider": "sarvam",
+     "rank": 28,
+     "samples": 292,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 271,
+     "p95_ms": 380,
+     "provider": "kimi",
+     "rank": 29,
+     "samples": 292,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 282,
+     "p95_ms": 718,
+     "provider": "iflytek",
+     "rank": 30,
+     "samples": 292,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 283,
+     "p95_ms": 331,
+     "provider": "deepseek",
+     "rank": 31,
+     "samples": 292,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 286,
+     "p95_ms": 310,
+     "provider": "ernie",
+     "rank": 32,
+     "samples": 291,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 314,
+     "p95_ms": 345,
+     "provider": "minimax",
+     "rank": 33,
+     "samples": 292,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 321,
+     "p95_ms": 331,
+     "provider": "sambanova",
+     "rank": 34,
+     "samples": 291,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 338,
+     "p95_ms": 448,
+     "provider": "ai21",
+     "rank": 35,
+     "samples": 292,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 349,
+     "p95_ms": 832,
+     "provider": "doubao",
+     "rank": 36,
+     "samples": 291,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 357,
+     "p95_ms": 409,
+     "provider": "qwencloud",
+     "rank": 37,
+     "samples": 269,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 374,
+     "p95_ms": 988,
+     "provider": "sensenova",
+     "rank": 38,
+     "samples": 291,
+     "uptime_pct": 99
+    },
+    {
+     "p50_ms": 390,
+     "p95_ms": 446,
+     "provider": "qwen",
+     "rank": 39,
+     "samples": 292,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 424,
+     "p95_ms": 1064,
+     "provider": "stepfun",
+     "rank": 40,
+     "samples": 290,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 494,
+     "p95_ms": 644,
+     "provider": "tencent-tokenhub",
+     "rank": 41,
+     "samples": 290,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 507,
+     "p95_ms": 1001,
+     "provider": "deepinfra",
+     "rank": 42,
+     "samples": 292,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 585,
+     "p95_ms": 1087,
+     "provider": "featherless",
+     "rank": 43,
+     "samples": 292,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 587,
+     "p95_ms": 595,
+     "provider": "upstage",
+     "rank": 44,
+     "samples": 291,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 603,
+     "p95_ms": 659,
+     "provider": "hyperbolic",
+     "rank": 45,
+     "samples": 292,
+     "uptime_pct": 100
+    }
+   ]
+  },
+  "sa-west": {
+   "label": "South America (Santiago)",
+   "network": [
+    {
+     "p50_ms": 56,
+     "p95_ms": 89,
+     "provider": "openrouter",
+     "rank": 1,
+     "samples": 272,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 175,
+     "p95_ms": 184,
+     "provider": "typesafe",
+     "rank": 2,
+     "samples": 272,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 176,
+     "p95_ms": 200,
+     "provider": "baseten",
+     "rank": 3,
+     "samples": 272,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 184,
+     "p95_ms": 303,
+     "provider": "meta-llama",
+     "rank": 4,
+     "samples": 272,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 191,
+     "p95_ms": 231,
+     "provider": "cohere",
+     "rank": 5,
+     "samples": 272,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 192,
+     "p95_ms": 245,
+     "provider": "cerebras",
+     "rank": 6,
+     "samples": 272,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 193,
+     "p95_ms": 270,
+     "provider": "groq",
+     "rank": 7,
+     "samples": 272,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 198,
+     "p95_ms": 249,
+     "provider": "anthropic",
+     "rank": 8,
+     "samples": 272,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 199,
+     "p95_ms": 262,
+     "provider": "xai",
+     "rank": 9,
+     "samples": 272,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 211,
+     "p95_ms": 276,
+     "provider": "openai",
+     "rank": 10,
+     "samples": 272,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 221,
+     "p95_ms": 504,
+     "provider": "inference-net",
+     "rank": 11,
+     "samples": 272,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 227,
+     "p95_ms": 436,
+     "provider": "novita",
+     "rank": 12,
+     "samples": 272,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 228,
+     "p95_ms": 481,
+     "provider": "perplexity",
+     "rank": 13,
+     "samples": 272,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 232,
+     "p95_ms": 638,
+     "provider": "together",
+     "rank": 14,
+     "samples": 272,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 260,
+     "p95_ms": 278,
+     "provider": "fireworks",
+     "rank": 15,
+     "samples": 272,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 263,
+     "p95_ms": 569,
+     "provider": "reka",
+     "rank": 16,
+     "samples": 272,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 266,
+     "p95_ms": 508,
+     "provider": "writer",
+     "rank": 17,
+     "samples": 272,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 274,
+     "p95_ms": 412,
+     "provider": "friendli",
+     "rank": 18,
+     "samples": 272,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 280,
+     "p95_ms": 284,
+     "provider": "siliconflow",
+     "rank": 19,
+     "samples": 272,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 297,
+     "p95_ms": 400,
+     "provider": "mistral",
+     "rank": 20,
+     "samples": 272,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 343,
+     "p95_ms": 394,
+     "provider": "kimi",
+     "rank": 21,
+     "samples": 272,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 379,
+     "p95_ms": 387,
+     "provider": "sambanova",
+     "rank": 22,
+     "samples": 272,
+     "uptime_pct": 97
+    },
+    {
+     "p50_ms": 396,
+     "p95_ms": 1337,
+     "provider": "baichuan",
+     "rank": 23,
+     "samples": 272,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 412,
+     "p95_ms": 420,
+     "provider": "ernie",
+     "rank": 24,
+     "samples": 272,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 420,
+     "p95_ms": 558,
+     "provider": "ai21",
+     "rank": 25,
+     "samples": 272,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 433,
+     "p95_ms": 474,
+     "provider": "nebius",
+     "rank": 26,
+     "samples": 272,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 440,
+     "p95_ms": 444,
+     "provider": "nscale",
+     "rank": 27,
+     "samples": 272,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 447,
+     "p95_ms": 494,
+     "provider": "deepseek",
+     "rank": 28,
+     "samples": 272,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 465,
+     "p95_ms": 505,
+     "provider": "aleph-alpha",
+     "rank": 29,
+     "samples": 272,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 499,
+     "p95_ms": 756,
+     "provider": "replicate",
+     "rank": 30,
+     "samples": 272,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 500,
+     "p95_ms": 522,
+     "provider": "minimax",
+     "rank": 31,
+     "samples": 272,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 532,
+     "p95_ms": 653,
+     "provider": "glm",
+     "rank": 32,
+     "samples": 272,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 538,
+     "p95_ms": 1075,
+     "provider": "deepinfra",
+     "rank": 33,
+     "samples": 272,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 597,
+     "p95_ms": 686,
+     "provider": "upstage",
+     "rank": 34,
+     "samples": 272,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 673,
+     "p95_ms": 699,
+     "provider": "sarvam",
+     "rank": 35,
+     "samples": 272,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 691,
+     "p95_ms": 1662,
+     "provider": "sensenova",
+     "rank": 36,
+     "samples": 272,
+     "uptime_pct": 98
+    },
+    {
+     "p50_ms": 692,
+     "p95_ms": 1729,
+     "provider": "stepfun",
+     "rank": 37,
+     "samples": 272,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 731,
+     "p95_ms": 1756,
+     "provider": "iflytek",
+     "rank": 38,
+     "samples": 272,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 735,
+     "p95_ms": 779,
+     "provider": "qwencloud",
+     "rank": 39,
+     "samples": 266,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 745,
+     "p95_ms": 802,
+     "provider": "qwen",
+     "rank": 40,
+     "samples": 272,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 762,
+     "p95_ms": 1752,
+     "provider": "doubao",
+     "rank": 41,
+     "samples": 272,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 764,
+     "p95_ms": 1437,
+     "provider": "featherless",
+     "rank": 42,
+     "samples": 272,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 764,
+     "p95_ms": 798,
+     "provider": "hyperbolic",
+     "rank": 43,
+     "samples": 272,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 785,
+     "p95_ms": 806,
+     "provider": "tencent-tokenhub",
+     "rank": 44,
+     "samples": 272,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 968,
+     "p95_ms": 1072,
+     "provider": "google",
+     "rank": 45,
+     "samples": 272,
+     "uptime_pct": 100
+    }
+   ]
+  },
+  "us-central": {
+   "label": "US (Central)",
+   "network": [
+    {
+     "p50_ms": 29,
+     "p95_ms": 77,
+     "provider": "fireworks",
+     "rank": 1,
+     "samples": 287,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 44,
+     "p95_ms": 112,
+     "provider": "google",
+     "rank": 2,
+     "samples": 287,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 47,
+     "p95_ms": 60,
+     "provider": "baseten",
+     "rank": 3,
+     "samples": 288,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 63,
+     "p95_ms": 108,
+     "provider": "cohere",
+     "rank": 4,
+     "samples": 288,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 65,
+     "p95_ms": 132,
+     "provider": "openrouter",
+     "rank": 5,
+     "samples": 287,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 76,
+     "p95_ms": 132,
+     "provider": "cerebras",
+     "rank": 6,
+     "samples": 288,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 79,
+     "p95_ms": 93,
+     "provider": "typesafe",
+     "rank": 7,
+     "samples": 288,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 81,
+     "p95_ms": 104,
+     "provider": "siliconflow",
+     "rank": 8,
+     "samples": 288,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 85,
+     "p95_ms": 135,
+     "provider": "perplexity",
+     "rank": 9,
+     "samples": 288,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 92,
+     "p95_ms": 148,
+     "provider": "replicate",
+     "rank": 10,
+     "samples": 288,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 94,
+     "p95_ms": 156,
+     "provider": "anthropic",
+     "rank": 11,
+     "samples": 287,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 101,
+     "p95_ms": 172,
+     "provider": "novita",
+     "rank": 12,
+     "samples": 288,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 102,
+     "p95_ms": 170,
+     "provider": "reka",
+     "rank": 13,
+     "samples": 288,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 114,
+     "p95_ms": 147,
+     "provider": "writer",
+     "rank": 14,
+     "samples": 288,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 118,
+     "p95_ms": 189,
+     "provider": "xai",
+     "rank": 15,
+     "samples": 287,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 122,
+     "p95_ms": 205,
+     "provider": "meta-llama",
+     "rank": 16,
+     "samples": 288,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 124,
+     "p95_ms": 209,
+     "provider": "together",
+     "rank": 17,
+     "samples": 288,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 129,
+     "p95_ms": 191,
+     "provider": "groq",
+     "rank": 18,
+     "samples": 288,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 139,
+     "p95_ms": 206,
+     "provider": "openai",
+     "rank": 19,
+     "samples": 287,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 161,
+     "p95_ms": 627,
+     "provider": "deepinfra",
+     "rank": 20,
+     "samples": 288,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 167,
+     "p95_ms": 210,
+     "provider": "sambanova",
+     "rank": 21,
+     "samples": 288,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 169,
+     "p95_ms": 297,
+     "provider": "friendli",
+     "rank": 22,
+     "samples": 288,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 179,
+     "p95_ms": 214,
+     "provider": "nebius",
+     "rank": 23,
+     "samples": 288,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 210,
+     "p95_ms": 308,
+     "provider": "mistral",
+     "rank": 24,
+     "samples": 287,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 222,
+     "p95_ms": 453,
+     "provider": "inference-net",
+     "rank": 25,
+     "samples": 287,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 233,
+     "p95_ms": 844,
+     "provider": "baichuan",
+     "rank": 26,
+     "samples": 288,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 236,
+     "p95_ms": 246,
+     "provider": "nscale",
+     "rank": 27,
+     "samples": 288,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 242,
+     "p95_ms": 400,
+     "provider": "ai21",
+     "rank": 28,
+     "samples": 288,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 251,
+     "p95_ms": 288,
+     "provider": "glm",
+     "rank": 29,
+     "samples": 288,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 268,
+     "p95_ms": 338,
+     "provider": "aleph-alpha",
+     "rank": 30,
+     "samples": 288,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 270,
+     "p95_ms": 361,
+     "provider": "kimi",
+     "rank": 31,
+     "samples": 288,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 271,
+     "p95_ms": 281,
+     "provider": "ernie",
+     "rank": 32,
+     "samples": 288,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 279,
+     "p95_ms": 349,
+     "provider": "hyperbolic",
+     "rank": 33,
+     "samples": 288,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 290,
+     "p95_ms": 658,
+     "provider": "featherless",
+     "rank": 34,
+     "samples": 288,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 318,
+     "p95_ms": 375,
+     "provider": "deepseek",
+     "rank": 35,
+     "samples": 287,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 344,
+     "p95_ms": 364,
+     "provider": "minimax",
+     "rank": 36,
+     "samples": 288,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 355,
+     "p95_ms": 374,
+     "provider": "upstage",
+     "rank": 37,
+     "samples": 288,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 380,
+     "p95_ms": 1047,
+     "provider": "stepfun",
+     "rank": 38,
+     "samples": 288,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 384,
+     "p95_ms": 1041,
+     "provider": "sensenova",
+     "rank": 39,
+     "samples": 288,
+     "uptime_pct": 98
+    },
+    {
+     "p50_ms": 408,
+     "p95_ms": 463,
+     "provider": "qwen",
+     "rank": 40,
+     "samples": 288,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 413,
+     "p95_ms": 1069,
+     "provider": "iflytek",
+     "rank": 41,
+     "samples": 288,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 421,
+     "p95_ms": 456,
+     "provider": "qwencloud",
+     "rank": 42,
+     "samples": 266,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 453,
+     "p95_ms": 1073,
+     "provider": "doubao",
+     "rank": 43,
+     "samples": 288,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 504,
+     "p95_ms": 520,
+     "provider": "sarvam",
+     "rank": 44,
+     "samples": 288,
+     "uptime_pct": 100
+    },
+    {
+     "p50_ms": 567,
+     "p95_ms": 614,
+     "provider": "tencent-tokenhub",
+     "rank": 45,
+     "samples": 288,
+     "uptime_pct": 100
+    }
+   ]
+  }
+ },
+ "shut_down": [
+  {
+   "http_410_since": null,
+   "page": "https://llmlatency.dev/provider/hunyuan",
+   "provider": "hunyuan",
+   "retired_on": "2026-09-30",
+   "source_url": "https://cloud.tencent.com/announce/detail/2287",
+   "state": "retired",
+   "summary": "Retired: Tencent Hunyuan shut this API down on September 30, 2026"
+  },
+  {
+   "http_410_since": "2026-08-09T04:12:30.042835+00:00",
+   "page": "https://llmlatency.dev/provider/targon",
+   "provider": "targon",
+   "retired_on": null,
+   "source_url": null,
+   "state": "gone",
+   "summary": "Gone: the API host answers HTTP 410 Gone from 4 of 4 regions"
+  },
+  {
+   "http_410_since": "2026-09-03T16:00:05.965224+00:00",
+   "page": "https://llmlatency.dev/provider/yi-01ai",
+   "provider": "yi-01ai",
+   "retired_on": "2026-09-03",
+   "source_url": "https://platform.lingyiwanwu.com/",
+   "state": "retired",
+   "summary": "Retired: 01.AI shut this API down on September 3, 2026"
+  }
+ ],
+ "source": "https://llmlatency.dev",
+ "unit": "milliseconds"
+}
