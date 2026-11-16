@@ -63,19 +63,19 @@ Add a provider, bring a new probe region, or improve the measurement code. See *
 
 <!-- DATASET:BEGIN -->
 
-### Daily snapshot — 2026-11-15
+### Daily snapshot — 2026-11-16
 
 Measured latency across **45 AI inference providers** in 4 regions. Method: distributed edge (DNS→TCP→TLS→TTFB) + inference (TTFT) probes, last 24h. License: CC-BY-4.0.
 
 | Region | Fastest provider (p50) | p50 | p95 | Uptime |
 |---|---|---|---|---|
-| Asia (Tokyo) | fireworks | 18 ms | 63 ms | 100% |
-| Europe (Germany) | nebius | 34 ms | 98 ms | 100% |
+| Asia (Tokyo) | fireworks | 18 ms | 59 ms | 100% |
+| Europe (Germany) | nebius | 33 ms | 97 ms | 100% |
 | South America (Santiago) | openrouter | 55 ms | 80 ms | 100% |
-| US (Central) | fireworks | 28 ms | 78 ms | 100% |
+| US (Central) | fireworks | 30 ms | 73 ms | 100% |
 
-- Full dataset: [`data/rankings/2026-11-15.json`](data/rankings/2026-11-15.json) ([latest](data/rankings/latest.json))
-- Citable archive (DOI): [`10.5281/zenodo.23388429`](https://doi.org/10.5281/zenodo.23388429) — daily aggregates, CC-BY-4.0
+- Full dataset: [`data/rankings/2026-11-16.json`](data/rankings/2026-11-16.json) ([latest](data/rankings/latest.json))
+- Citable archive (DOI): [`10.5281/zenodo.24241853`](https://doi.org/10.5281/zenodo.24241853) — daily aggregates, CC-BY-4.0
 - Hugging Face dataset: <https://huggingface.co/datasets/llmlatency/llm-latency-tracker>
 - Kaggle dataset: <https://www.kaggle.com/datasets/llmlatency/llm-latency-tracker>
 - Archived in Software Heritage: [`swh:1:snp:2778cbabd72a70a629ee35fbd5ac536d1ccb7a9a`](https://archive.softwareheritage.org/swh:1:snp:2778cbabd72a70a629ee35fbd5ac536d1ccb7a9a)
@@ -84,7 +84,7 @@ Measured latency across **45 AI inference providers** in 4 regions. Method: dist
 - Machine-readable API: <https://llmlatency.dev/api/rankings.json>
 - Model deprecation calendar: <https://llmlatency.dev/deprecations>
 
-_Snapshot generated 2026-11-15T07:46:41Z — this table is regenerated daily._
+_Snapshot generated 2026-11-16T07:46:38Z — this table is regenerated daily._
 
 <!-- DATASET:END -->
 
